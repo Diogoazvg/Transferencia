@@ -228,9 +228,9 @@ pt-BR:
         unlocked: "Sua conta foi desbloqueado com sucesso. Faça login para continuar."
     confirmations:
       user:
-        confirmed: "Your email address has been successfully confirmed."
-        send_instructions: "You will receive an email with instructions for how to confirm your email address in a few minutes."
-        send_paranoid_instructions: "If your email address exists in our database, you will receive an email with instructions for how to confirm your email address in a few minutes."
+        confirmed: "O seu endereço de e-mail foi confirmado com sucesso."
+        send_instructions: "Você receberá um e-mail com instruções sobre como confirmar o seu endereço de e-mail em poucos minutos."
+        send_paranoid_instructions: "Se o seu endereço de e-mail existe na nossa base de dados, você receberá um e-mail com instruções sobre como confirmar o seu endereço de e-mail em poucos minutos."
     failure:
       user:
         already_authenticated: "Você já está cadastrado."
