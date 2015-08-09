@@ -252,8 +252,8 @@ pt-BR:
           subject: "Unlock instructions"
     omniauth_callbacks:
       user:
-        failure: "Could not authenticate you from %{kind} because \"%{reason}\"."
-        success: "Successfully authenticated from %{kind} account."
+        failure: "Não foi possível autentica-lo de %{kind} porque \"%{reason}\"."
+        success: "Autenticado com êxito de %{kind} conta."
     passwords:
       user:
         no_token: "Você não pode acessar esta página sem ter vindo de um e-mail de redefinição de senha. Se você vem de um e-mail de redefinição de senha, por favor, certifique-se de que você usou a URL correta."
