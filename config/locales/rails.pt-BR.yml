@@ -233,23 +233,23 @@ pt-BR:
         send_paranoid_instructions: "If your email address exists in our database, you will receive an email with instructions for how to confirm your email address in a few minutes."
     failure:
       user:
-        already_authenticated: "You are already signed in."
-        inactive: "Your account is not activated yet."
-        invalid: "Invalid %{authentication_keys} or password."
-        locked: "Your account is locked."
-        last_attempt: "You have one more attempt before your account is locked."
-        not_found_in_database: "Invalid %{authentication_keys} or password."
-        timeout: "Your session expired. Please sign in again to continue."
-        unauthenticated: "You need to sign in or sign up before continuing."
-        unconfirmed: "You have to confirm your email address before continuing."
+        already_authenticated: "Você já está cadastrado."
+        inactive: "A sua conta ainda não está ativada."
+        invalid: "Inválido %{authentication_keys}  senha."
+        locked: "Sua conta está bloqueada."
+        last_attempt: "Você tem mais uma tentativa antes de sua conta ser bloqueada."
+        not_found_in_database: "Inválido %{authentication_keys} ou senha."
+        timeout: "Sua sessão expirou. Faça login novamente para continuar."
+        unauthenticated: "Você precisa fazer login ou se cadastrar antes de continuar."
+        unconfirmed: "Você tem que confirmar o seu endereço de e-mail antes de continuar."
     mailer:
       user:
         confirmation_instructions:
-          subject: "Confirmation instructions"
+          subject: "instruções de confirmação"
         reset_password_instructions:
-          subject: "Reset password instructions"
+          subject: "Redefinição de senha, instruções"
         unlock_instructions:
-          subject: "Unlock instructions"
+          subject: "desbloquear instruções"
     omniauth_callbacks:
       user:
         failure: "Não foi possível autentica-lo de %{kind} porque \"%{reason}\"."
