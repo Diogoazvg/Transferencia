@@ -225,4 +225,39 @@ pt-BR:
       user:
         send_instructions: "Você receberá um e-mail com instruções sobre como desbloquear a sua conta em poucos minutos."
         send_paranoid_instructions: "Se a sua conta existe, você receberá um e-mail com instruções sobre como desbloqueá-la em poucos minutos."
-        unlocked: "Sua conta foi desbloqueado com sucesso. Faça login para continuar."        
+        unlocked: "Sua conta foi desbloqueado com sucesso. Faça login para continuar."
+    confirmations:
+      user:
+        confirmed: "Your email address has been successfully confirmed."
+        send_instructions: "You will receive an email with instructions for how to confirm your email address in a few minutes."
+        send_paranoid_instructions: "If your email address exists in our database, you will receive an email with instructions for how to confirm your email address in a few minutes."
+    failure:
+      user:
+        already_authenticated: "You are already signed in."
+        inactive: "Your account is not activated yet."
+        invalid: "Invalid %{authentication_keys} or password."
+        locked: "Your account is locked."
+        last_attempt: "You have one more attempt before your account is locked."
+        not_found_in_database: "Invalid %{authentication_keys} or password."
+        timeout: "Your session expired. Please sign in again to continue."
+        unauthenticated: "You need to sign in or sign up before continuing."
+        unconfirmed: "You have to confirm your email address before continuing."
+    mailer:
+      user:
+        confirmation_instructions:
+          subject: "Confirmation instructions"
+        reset_password_instructions:
+          subject: "Reset password instructions"
+        unlock_instructions:
+          subject: "Unlock instructions"
+    omniauth_callbacks:
+      user:
+        failure: "Could not authenticate you from %{kind} because \"%{reason}\"."
+        success: "Successfully authenticated from %{kind} account."
+    passwords:
+      user:
+        no_token: "Você não pode acessar esta página sem ter vindo de um e-mail de redefinição de senha. Se você vem de um e-mail de redefinição de senha, por favor, certifique-se de que você usou a URL correta."
+        send_instructions: "Você receberá um e-mail com instruções sobre como redefinir sua senha em poucos minutos."
+        send_paranoid_instructions: "Se o seu endereço de e-mail existe na nossa base de dados, você receberá um link de recuperação de senha para o seu endereço de e-mail em poucos minutos."
+        updated: "Sua senha foi alterada com sucesso. Você agora está conectado."
+        updated_not_active: "Sua senha foi alterada com sucesso."            
