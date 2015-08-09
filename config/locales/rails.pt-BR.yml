@@ -209,7 +209,20 @@ pt-BR:
   devise:
     registrations:
       user:
+        destroyed: "Tchau! Sua conta foi cancelada com sucesso. Nós esperamos vê-lo novamente em breve."
+        signed_up: "Bem-vindo! Você se inscreveu com êxito."
+        signed_up_but_inactive: "Você se inscreveu com êxito. No entanto, não foi possível registrar você porque a sua conta ainda não está ativada."
+        signed_up_but_locked: "Você se inscreveu com êxito. No entanto, não foi possível registrar você porque sua conta está bloqueada."
+        update_needs_confirmation: "Você atualizou sua conta com êxito, mas precisamos verificar o seu novo endereço de e-mail. Por favor, verifique seu e-mail e clique no link de confirmação para confirmar o seu novo endereço de e-mail."
+        updated: "Sua conta foi atualizada com sucesso"
         signed_up_but_unconfirmed: 'Uma mensagem com um link de confirmação foi enviada para seu endereço de e-mail. Por favor, siga o link para ativar sua conta'
     sessions:
       user:
-        signed_in: 'Logado com sucesso'    
+        signed_in: 'Logado com sucesso'
+        signed_out: "Deslogado com sucesso."
+        already_signed_out: "Não pode logar, você já está Logado."
+    unlocks:
+      user:
+        send_instructions: "Você receberá um e-mail com instruções sobre como desbloquear a sua conta em poucos minutos."
+        send_paranoid_instructions: "Se a sua conta existe, você receberá um e-mail com instruções sobre como desbloqueá-la em poucos minutos."
+        unlocked: "Sua conta foi desbloqueado com sucesso. Faça login para continuar."        
