@@ -206,3 +206,10 @@ pt-BR:
       long: "%d de %B de %Y, %H:%M"
       short: "%d de %B, %H:%M"
     pm: ''
+  devise:
+    registrations:
+      user:
+        signed_up_but_unconfirmed: 'Uma mensagem com um link de confirmação foi enviada para seu endereço de e-mail. Por favor, siga o link para ativar sua conta'
+    sessions:
+      user:
+        signed_in: 'Logado com sucesso'    

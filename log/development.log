@@ -2749,3 +2749,868 @@ Started GET "/assets/searches.js?body=1" for 127.0.0.1 at 2015-08-08 23:40:23 -0
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-08 23:40:23 -0300
+
+
+Started GET "/users/sign_up?locale=pt-BR" for 127.0.0.1 at 2015-08-09 00:55:29 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Devise::RegistrationsController#new as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendered devise/shared/_links.html.erb (1.6ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (32.0ms)
+Completed 200 OK in 161ms (Views: 135.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/sign_in?locale=pt-BR" for 127.0.0.1 at 2015-08-09 00:55:45 -0300
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 63ms (Views: 60.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in?locale=pt-BR" for 127.0.0.1 at 2015-08-09 00:56:11 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ilak5TwuaIkscwAHTsPmH8qZiqpNY1ieEAE6Av6h/EA=", "user"=>{"email"=>"diogo.azvg@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in", "locale"=>"pt-BR"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."email" = 'diogo.azvg@gmail.com'  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 2  [["current_sign_in_at", "2015-08-09 03:56:11.793246"], ["sign_in_count", 2], ["updated_at", "2015-08-09 03:56:11.794814"]]
+  [1m[36m (166.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/?locale=pt-BR
+Completed 302 Found in 272ms (ActiveRecord: 167.7ms)
+
+
+Started GET "/?locale=pt-BR" for 127.0.0.1 at 2015-08-09 00:56:11 -0300
+Processing by HomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered home/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 74ms (Views: 73.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/default.css?body=1" for 127.0.0.1 at 2015-08-09 00:56:12 -0300
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2015-08-09 00:56:12 -0300
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-08-09 00:56:12 -0300
+
+
+Started GET "/assets/searches.css?body=1" for 127.0.0.1 at 2015-08-09 00:56:12 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-09 00:56:12 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-09 00:56:12 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-09 00:56:12 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-09 00:56:12 -0300
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-08-09 00:56:12 -0300
+
+
+Started GET "/assets/searches.js?body=1" for 127.0.0.1 at 2015-08-09 00:56:12 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-09 00:56:12 -0300
+
+
+Started DELETE "/users/sign_out?locale=pt-BR" for 127.0.0.1 at 2015-08-09 00:56:23 -0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"UtbolVbd+jy3FiScp+i0L6swLhMS36BYJkOt3EHaXdI=", "locale"=>"pt-BR"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/?locale=pt-BR
+Completed 302 Found in 9ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/?locale=pt-BR" for 127.0.0.1 at 2015-08-09 00:56:23 -0300
+Processing by HomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendered home/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 60ms (Views: 59.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/default.css?body=1" for 127.0.0.1 at 2015-08-09 00:56:23 -0300
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2015-08-09 00:56:23 -0300
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-08-09 00:56:23 -0300
+
+
+Started GET "/assets/searches.css?body=1" for 127.0.0.1 at 2015-08-09 00:56:23 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-09 00:56:23 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-09 00:56:23 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-09 00:56:23 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-09 00:56:23 -0300
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-08-09 00:56:23 -0300
+
+
+Started GET "/assets/searches.js?body=1" for 127.0.0.1 at 2015-08-09 00:56:23 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-09 00:56:23 -0300
+
+
+Started GET "/users/sign_up?locale=pt-BR" for 127.0.0.1 at 2015-08-09 00:56:26 -0300
+Processing by Devise::RegistrationsController#new as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendered devise/shared/_links.html.erb (0.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 75ms (Views: 72.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users?locale=pt-BR" for 127.0.0.1 at 2015-08-09 00:57:09 -0300
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ncSRPYMMxxJuyam6xLKRZoiuKZferBJ5LGaVgah6xec=", "user"=>{"name"=>"Donald", "email"=>"donald@gmail.com", "login"=>"Don", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "enabled"=>"1", "url_image"=>""}, "commit"=>"Sign up", "locale"=>"pt-BR"}
+Unpermitted parameters: enabled
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'donald@gmail.com' LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."confirmation_token" = '066f461379b68a7c932c6aef94737797d6f9c552c9a6b8a1b5e9b42a560c6001'  ORDER BY "users"."id" ASC LIMIT 1
+Binary data inserted for `string` type on column `confirmation_token`
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("confirmation_sent_at", "confirmation_token", "created_at", "email", "encrypted_password", "login", "name", "updated_at", "url_image") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["confirmation_sent_at", "2015-08-09 03:57:09.929070"], ["confirmation_token", "066f461379b68a7c932c6aef94737797d6f9c552c9a6b8a1b5e9b42a560c6001"], ["created_at", "2015-08-09 03:57:09.717347"], ["email", "donald@gmail.com"], ["encrypted_password", "$2a$10$7HYkkZS.//CIxdiuunTjDeMqK5nUwSHZrOdiE4TRKxYRm62rvHkTK"], ["login", "Don"], ["name", "Donald"], ["updated_at", "2015-08-09 03:57:09.717347"], ["url_image", ""]]
+  Rendered devise/mailer/confirmation_instructions.html.erb (1.2ms)
+
+Devise::Mailer#confirmation_instructions: processed outbound mail in 17.1ms
+
+Sent mail to donald@gmail.com (90.9ms)
+Date: Sun, 09 Aug 2015 00:57:09 -0300
+From: please-change-me-at-config-initializers-devise@example.com
+Reply-To: please-change-me-at-config-initializers-devise@example.com
+To: donald@gmail.com
+Message-ID: <55c6cf95f2de3_7f173fb50dcd73304729@diogo-Notebook.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome donald@gmail.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=KKfWFDZnCy3XWdRrRBmZ">Confirm my account</a></p>
+
+  [1m[35m (134.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/?locale=pt-BR
+Completed 302 Found in 604ms (ActiveRecord: 135.6ms)
+
+
+Started GET "/?locale=pt-BR" for 127.0.0.1 at 2015-08-09 00:57:10 -0300
+Processing by HomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendered home/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 64ms (Views: 62.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/default.css?body=1" for 127.0.0.1 at 2015-08-09 00:57:10 -0300
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2015-08-09 00:57:10 -0300
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-08-09 00:57:10 -0300
+
+
+Started GET "/assets/searches.css?body=1" for 127.0.0.1 at 2015-08-09 00:57:10 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-09 00:57:10 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-09 00:57:10 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-09 00:57:10 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-09 00:57:10 -0300
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-08-09 00:57:10 -0300
+
+
+Started GET "/assets/searches.js?body=1" for 127.0.0.1 at 2015-08-09 00:57:10 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-09 00:57:10 -0300
+
+
+Started GET "/users/confirmation?confirmation_token=KKfWFDZnCy3XWdRrRBmZ" for 127.0.0.1 at 2015-08-09 00:57:40 -0300
+Processing by Devise::ConfirmationsController#show as HTML
+  Parameters: {"confirmation_token"=>"KKfWFDZnCy3XWdRrRBmZ"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."confirmation_token" = '066f461379b68a7c932c6aef94737797d6f9c552c9a6b8a1b5e9b42a560c6001'  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "confirmed_at" = ?, "updated_at" = ? WHERE "users"."id" = 3[0m  [["confirmed_at", "2015-08-09 03:57:40.939624"], ["updated_at", "2015-08-09 03:57:40.940180"]]
+  [1m[35m (200.9ms)[0m  commit transaction
+Redirected to http://localhost:3000/users/sign_in?locale=pt-BR
+Completed 302 Found in 209ms (ActiveRecord: 201.8ms)
+
+
+Started GET "/users/sign_in?locale=pt-BR" for 127.0.0.1 at 2015-08-09 00:57:41 -0300
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendered devise/shared/_links.html.erb (0.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 78ms (Views: 75.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/default.css?body=1" for 127.0.0.1 at 2015-08-09 00:57:41 -0300
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2015-08-09 00:57:41 -0300
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-08-09 00:57:41 -0300
+
+
+Started GET "/assets/searches.css?body=1" for 127.0.0.1 at 2015-08-09 00:57:41 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-09 00:57:41 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-09 00:57:41 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-09 00:57:41 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-09 00:57:41 -0300
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-08-09 00:57:41 -0300
+
+
+Started GET "/assets/searches.js?body=1" for 127.0.0.1 at 2015-08-09 00:57:41 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-09 00:57:41 -0300
+
+
+Started GET "/?locale=pt-BR" for 127.0.0.1 at 2015-08-09 01:33:41 -0300
+Processing by HomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 74ms (Views: 59.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/default.css?body=1" for 127.0.0.1 at 2015-08-09 01:33:41 -0300
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2015-08-09 01:33:41 -0300
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-08-09 01:33:41 -0300
+
+
+Started GET "/assets/searches.css?body=1" for 127.0.0.1 at 2015-08-09 01:33:41 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-09 01:33:41 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-09 01:33:41 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-09 01:33:41 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-09 01:33:41 -0300
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-08-09 01:33:41 -0300
+
+
+Started GET "/assets/searches.js?body=1" for 127.0.0.1 at 2015-08-09 01:33:41 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-09 01:33:41 -0300
+
+
+Started GET "/users/sign_in?locale=pt-BR" for 127.0.0.1 at 2015-08-09 01:33:45 -0300
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendered devise/shared/_links.html.erb (0.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 80ms (Views: 60.0ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/users/sign_in?locale=pt-BR" for 127.0.0.1 at 2015-08-09 01:33:59 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ncSRPYMMxxJuyam6xLKRZoiuKZferBJ5LGaVgah6xec=", "user"=>{"email"=>"donald.azvg@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in", "locale"=>"pt-BR"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."email" = 'donald.azvg@gmail.com'  ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 401 Unauthorized in 4ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ncSRPYMMxxJuyam6xLKRZoiuKZferBJ5LGaVgah6xec=", "user"=>{"email"=>"donald.azvg@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in", "locale"=>"pt-BR"}
+  Rendered devise/shared/_links.html.erb (0.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 143ms (Views: 61.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/default.css?body=1" for 127.0.0.1 at 2015-08-09 01:34:00 -0300
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2015-08-09 01:34:00 -0300
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-08-09 01:34:00 -0300
+
+
+Started GET "/assets/searches.css?body=1" for 127.0.0.1 at 2015-08-09 01:34:00 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-09 01:34:00 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-09 01:34:00 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-09 01:34:00 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-09 01:34:00 -0300
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-08-09 01:34:00 -0300
+
+
+Started GET "/assets/searches.js?body=1" for 127.0.0.1 at 2015-08-09 01:34:00 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-09 01:34:00 -0300
+
+
+Started GET "/users/confirmation?confirmation_token=KKfWFDZnCy3XWdRrRBmZ" for 127.0.0.1 at 2015-08-09 01:34:29 -0300
+Processing by Devise::ConfirmationsController#show as HTML
+  Parameters: {"confirmation_token"=>"KKfWFDZnCy3XWdRrRBmZ"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."confirmation_token" = '066f461379b68a7c932c6aef94737797d6f9c552c9a6b8a1b5e9b42a560c6001'  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered devise/shared/_links.html.erb (1.3ms)
+  Rendered devise/confirmations/new.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 78ms (Views: 72.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/default.css?body=1" for 127.0.0.1 at 2015-08-09 01:34:29 -0300
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2015-08-09 01:34:29 -0300
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-08-09 01:34:29 -0300
+
+
+Started GET "/assets/searches.css?body=1" for 127.0.0.1 at 2015-08-09 01:34:29 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-09 01:34:29 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-09 01:34:29 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-09 01:34:29 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-09 01:34:29 -0300
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-08-09 01:34:29 -0300
+
+
+Started GET "/assets/searches.js?body=1" for 127.0.0.1 at 2015-08-09 01:34:29 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-09 01:34:29 -0300
+
+
+Started GET "/users/sign_in?locale=pt-BR" for 127.0.0.1 at 2015-08-09 01:34:38 -0300
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 70ms (Views: 67.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in?locale=pt-BR" for 127.0.0.1 at 2015-08-09 01:34:51 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ncSRPYMMxxJuyam6xLKRZoiuKZferBJ5LGaVgah6xec=", "user"=>{"email"=>"donald@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in", "locale"=>"pt-BR"}
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."email" = 'donald@gmail.com'  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Binary data inserted for `string` type on column `current_sign_in_ip`
+Binary data inserted for `string` type on column `last_sign_in_ip`
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "current_sign_in_at" = ?, "current_sign_in_ip" = ?, "last_sign_in_at" = ?, "last_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 3[0m  [["current_sign_in_at", "2015-08-09 04:34:51.735200"], ["current_sign_in_ip", "127.0.0.1"], ["last_sign_in_at", "2015-08-09 04:34:51.735200"], ["last_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", "2015-08-09 04:34:51.736053"]]
+  [1m[35m (150.2ms)[0m  commit transaction
+Redirected to http://localhost:3000/?locale=pt-BR
+Completed 302 Found in 250ms (ActiveRecord: 151.3ms)
+
+
+Started GET "/?locale=pt-BR" for 127.0.0.1 at 2015-08-09 01:34:51 -0300
+Processing by HomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 73ms (Views: 71.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/default.css?body=1" for 127.0.0.1 at 2015-08-09 01:34:52 -0300
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2015-08-09 01:34:52 -0300
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-08-09 01:34:52 -0300
+
+
+Started GET "/assets/searches.css?body=1" for 127.0.0.1 at 2015-08-09 01:34:52 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-09 01:34:52 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-09 01:34:52 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-09 01:34:52 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-09 01:34:52 -0300
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-08-09 01:34:52 -0300
+
+
+Started GET "/assets/searches.js?body=1" for 127.0.0.1 at 2015-08-09 01:34:52 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-09 01:34:52 -0300
+
+
+Started GET "/?locale=pt-BR" for 127.0.0.1 at 2015-08-09 01:38:13 -0300
+Processing by HomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered home/index.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 96ms (Views: 81.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/default.css?body=1" for 127.0.0.1 at 2015-08-09 01:38:14 -0300
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2015-08-09 01:38:14 -0300
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-08-09 01:38:14 -0300
+
+
+Started GET "/assets/searches.css?body=1" for 127.0.0.1 at 2015-08-09 01:38:14 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-09 01:38:14 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-09 01:38:14 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-09 01:38:14 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-09 01:38:14 -0300
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-08-09 01:38:14 -0300
+
+
+Started GET "/assets/searches.js?body=1" for 127.0.0.1 at 2015-08-09 01:38:14 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-09 01:38:14 -0300
+
+
+Started DELETE "/users/sign_out?locale=pt-BR" for 127.0.0.1 at 2015-08-09 01:38:21 -0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Je3XltN36U66/qEWJpdv3qONPKQXOTt5qhNweTvltDA=", "locale"=>"pt-BR"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/?locale=pt-BR
+Completed 302 Found in 5ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/?locale=pt-BR" for 127.0.0.1 at 2015-08-09 01:38:21 -0300
+Processing by HomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 69ms (Views: 67.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/default.css?body=1" for 127.0.0.1 at 2015-08-09 01:38:21 -0300
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2015-08-09 01:38:21 -0300
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-08-09 01:38:21 -0300
+
+
+Started GET "/assets/searches.css?body=1" for 127.0.0.1 at 2015-08-09 01:38:21 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-09 01:38:21 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-09 01:38:21 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-09 01:38:21 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-09 01:38:21 -0300
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-08-09 01:38:21 -0300
+
+
+Started GET "/assets/searches.js?body=1" for 127.0.0.1 at 2015-08-09 01:38:21 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-09 01:38:21 -0300
+
+
+Started GET "/users/sign_in?locale=pt-BR" for 127.0.0.1 at 2015-08-09 01:38:23 -0300
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendered devise/shared/_links.html.erb (0.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 75ms (Views: 72.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in?locale=pt-BR" for 127.0.0.1 at 2015-08-09 01:38:33 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IB17Pta1IS6VYJJXEpauBrhhBlJTiyFs5zkgCh0fXmM=", "user"=>{"email"=>"donald@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in", "locale"=>"pt-BR"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."email" = 'donald@gmail.com'  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 3  [["current_sign_in_at", "2015-08-09 04:38:33.540290"], ["sign_in_count", 2], ["updated_at", "2015-08-09 04:38:33.541188"]]
+  [1m[36m (120.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/?locale=pt-BR
+Completed 302 Found in 214ms (ActiveRecord: 121.7ms)
+
+
+Started GET "/?locale=pt-BR" for 127.0.0.1 at 2015-08-09 01:38:33 -0300
+Processing by HomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered home/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 64ms (Views: 63.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/default.css?body=1" for 127.0.0.1 at 2015-08-09 01:38:33 -0300
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2015-08-09 01:38:33 -0300
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-08-09 01:38:33 -0300
+
+
+Started GET "/assets/searches.css?body=1" for 127.0.0.1 at 2015-08-09 01:38:33 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-09 01:38:33 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-09 01:38:33 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-09 01:38:33 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-09 01:38:33 -0300
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-08-09 01:38:33 -0300
+
+
+Started GET "/assets/searches.js?body=1" for 127.0.0.1 at 2015-08-09 01:38:33 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-09 01:38:33 -0300
+
+
+Started GET "/?locale=pt-BR" for 127.0.0.1 at 2015-08-09 01:59:47 -0300
+Processing by HomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (16.8ms)
+Completed 200 OK in 88ms (Views: 73.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/default.css?body=1" for 127.0.0.1 at 2015-08-09 01:59:47 -0300
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2015-08-09 01:59:47 -0300
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-08-09 01:59:47 -0300
+
+
+Started GET "/assets/searches.css?body=1" for 127.0.0.1 at 2015-08-09 01:59:47 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-09 01:59:47 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-09 01:59:47 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-09 01:59:47 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-09 01:59:47 -0300
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-08-09 01:59:47 -0300
+
+
+Started GET "/assets/searches.js?body=1" for 127.0.0.1 at 2015-08-09 01:59:47 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-09 01:59:47 -0300
+
+
+Started DELETE "/users/sign_out?locale=pt-BR" for 127.0.0.1 at 2015-08-09 01:59:55 -0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"bcawAk8vYEkdtoNmjDrJBWN3zb5Mej442+9+iLOH+wU=", "locale"=>"pt-BR"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/?locale=pt-BR
+Completed 302 Found in 7ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/?locale=pt-BR" for 127.0.0.1 at 2015-08-09 01:59:55 -0300
+Processing by HomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendered home/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 73ms (Views: 71.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/default.css?body=1" for 127.0.0.1 at 2015-08-09 01:59:55 -0300
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2015-08-09 01:59:55 -0300
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-08-09 01:59:55 -0300
+
+
+Started GET "/assets/searches.css?body=1" for 127.0.0.1 at 2015-08-09 01:59:55 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-09 01:59:55 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-09 01:59:55 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-09 01:59:55 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-09 01:59:55 -0300
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-08-09 01:59:55 -0300
+
+
+Started GET "/assets/searches.js?body=1" for 127.0.0.1 at 2015-08-09 01:59:55 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-09 01:59:55 -0300
+
+
+Started GET "/users/sign_in?locale=pt-BR" for 127.0.0.1 at 2015-08-09 01:59:59 -0300
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 68ms (Views: 66.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in?locale=pt-BR" for 127.0.0.1 at 2015-08-09 02:00:11 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YTeyVh30Q+2eZpdQs7Dnxy/exvRM6BYM5UOcdLXNULY=", "user"=>{"email"=>"donald@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in", "locale"=>"pt-BR"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."email" = 'donald@gmail.com'  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 3[0m  [["current_sign_in_at", "2015-08-09 05:00:11.176412"], ["last_sign_in_at", "2015-08-09 04:38:33.540290"], ["sign_in_count", 3], ["updated_at", "2015-08-09 05:00:11.177310"]]
+  [1m[35m (126.2ms)[0m  commit transaction
+Redirected to http://localhost:3000/?locale=pt-BR
+Completed 302 Found in 224ms (ActiveRecord: 127.2ms)
+
+
+Started GET "/?locale=pt-BR" for 127.0.0.1 at 2015-08-09 02:00:11 -0300
+Processing by HomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 71ms (Views: 68.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/default.css?body=1" for 127.0.0.1 at 2015-08-09 02:00:11 -0300
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2015-08-09 02:00:11 -0300
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-08-09 02:00:11 -0300
+
+
+Started GET "/assets/searches.css?body=1" for 127.0.0.1 at 2015-08-09 02:00:11 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-09 02:00:11 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-09 02:00:11 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-09 02:00:11 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-09 02:00:11 -0300
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-08-09 02:00:11 -0300
+
+
+Started GET "/assets/searches.js?body=1" for 127.0.0.1 at 2015-08-09 02:00:11 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-09 02:00:11 -0300
+
+
+Started DELETE "/users/sign_out?locale=pt-BR" for 127.0.0.1 at 2015-08-09 02:52:35 -0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"1FZK03GKcSG6aWeB0ANcQLTxv92ZTaDvPCLbz1itIvY=", "locale"=>"pt-BR"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/?locale=pt-BR
+Completed 302 Found in 30ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/?locale=pt-BR" for 127.0.0.1 at 2015-08-09 02:52:35 -0300
+Processing by HomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendered home/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 75ms (Views: 73.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/default.css?body=1" for 127.0.0.1 at 2015-08-09 02:52:35 -0300
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2015-08-09 02:52:35 -0300
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-08-09 02:52:35 -0300
+
+
+Started GET "/assets/searches.css?body=1" for 127.0.0.1 at 2015-08-09 02:52:35 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-09 02:52:35 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-09 02:52:35 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-09 02:52:35 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-09 02:52:35 -0300
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-08-09 02:52:35 -0300
+
+
+Started GET "/assets/searches.js?body=1" for 127.0.0.1 at 2015-08-09 02:52:35 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-09 02:52:35 -0300
+
+
+Started GET "/users/sign_in?locale=pt-BR" for 127.0.0.1 at 2015-08-09 02:52:40 -0300
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 72ms (Views: 69.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in?locale=pt-BR" for 127.0.0.1 at 2015-08-09 02:52:53 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zGxjJVaR7Nbuz8PpYH6MwpGZZfSuPMqKQhrlM2AlHL4=", "user"=>{"email"=>"diogo.azvg@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in", "locale"=>"pt-BR"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."email" = 'diogo.azvg@gmail.com'  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 2[0m  [["current_sign_in_at", "2015-08-09 05:52:53.515517"], ["last_sign_in_at", "2015-08-09 03:56:11.793246"], ["sign_in_count", 3], ["updated_at", "2015-08-09 05:52:53.516497"]]
+  [1m[35m (126.3ms)[0m  commit transaction
+Redirected to http://localhost:3000/?locale=pt-BR
+Completed 302 Found in 218ms (ActiveRecord: 127.1ms)
+
+
+Started GET "/?locale=pt-BR" for 127.0.0.1 at 2015-08-09 02:52:53 -0300
+Processing by HomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 65ms (Views: 63.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/default.css?body=1" for 127.0.0.1 at 2015-08-09 02:52:53 -0300
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2015-08-09 02:52:53 -0300
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-08-09 02:52:53 -0300
+
+
+Started GET "/assets/searches.css?body=1" for 127.0.0.1 at 2015-08-09 02:52:53 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-09 02:52:53 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-09 02:52:53 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-09 02:52:53 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-09 02:52:53 -0300
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-08-09 02:52:53 -0300
+
+
+Started GET "/assets/searches.js?body=1" for 127.0.0.1 at 2015-08-09 02:52:53 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-09 02:52:53 -0300
