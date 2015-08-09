@@ -1,0 +1,28 @@
+<% if @requestForTransfer.errors.any? %>
+  <div id="error_explanation">
+    <h2>Infelizmente não foi possível completar a ação pois o formulário possui os seguintes erros:</h2>
+    <ul>
+      <% @requestForTransfer.errors.full_messages.each do |message|%>
+        <li><%= message %> </li>
+    <% end %>
+  </ul>
+  </div>
+  <% end %>
+
+<%= form_for @requestForTransfer do |f| %>
+  <p>
+    <%= f.label :full_name %><br>
+    <%= f.text_field :full_name %>
+  </p>
+  <p>
+    <%= f.label :folder %><br>
+    <%= f.number_field :folder %>
+  </p>
+  <p>
+    <%= f.label :team %><br>
+    <%= f.text_field :team %>
+  </p>
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>

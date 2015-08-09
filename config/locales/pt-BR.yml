@@ -1,0 +1,42 @@
+pt-BR:
+  activerecord:
+    models:
+      search: Busca
+      confirm: Confirmação
+      request_for_transfer: Requisição de Transferência
+    attributes:
+      search:
+        name: Nome completo
+        folder: Número de pasta
+      confirm:
+        justification: Justificatíva
+      request_for_transfer:
+        full_name: Nome completo
+        folder: Número de pasta
+        team: Turma desejada para a Transferência
+  searches:
+    new:
+      search: 'Busca de pendência'
+      Next: 'Próximo'
+  confirms:
+    new:
+      confirm: 'Confirmação de Transferência '
+      Next: 'Próximo'
+  request_for_transfers:
+    new:
+      transfer: 'Pedido de Transferência'
+      Next: 'Próximo'        
+  helpers:
+    submit:
+      search:
+        create: 'Verificar pendência'
+        submit: Salvar %{model}
+        update: Atualizar %{model}
+      confirm:
+        create: 'Confirmar'
+        submit: Salvar %{model}
+        update: Atualizar %{model}
+      request_for_transfer:
+        create: 'Pedir Transferência'
+        submit: Salvar %{model}
+        update: Atualizar %{model}

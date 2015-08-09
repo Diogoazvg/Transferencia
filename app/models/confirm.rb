@@ -1,0 +1,2 @@
+class Confirm < Autentication
+end

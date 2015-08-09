@@ -1,0 +1,21 @@
+<% if @search.errors.any? %>
+  <div id="error_explanation">
+    <h2>Infelizmente não foi possível completar a ação pois o formulário possui os seguintes erros:</h2>
+    <ul>
+      <% @search.errors.full_messages.each do |message|%>
+        <li><%= message %> </li>
+    <% end %>
+  </ul>
+  </div>
+<% end %>
+<%= form_for (@search) do |f| %>
+  <p>
+    <%= f.label :N_PASTA %><br>
+    <%= f.text_field :N_PASTA %>
+    <%= f.radio_button :CONDICAO,false, :checked => true%>
+  </p>
+  <%= f.submit %>
+  
+  <p>
+  </p>
+<% end %>
