@@ -3778,3 +3778,1314 @@ Started GET "/assets/searches.js?body=1" for 127.0.0.1 at 2015-08-09 03:18:29 -0
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-09 03:18:29 -0300
+
+
+Started POST "/users/sign_in?locale=pt-BR" for 127.0.0.1 at 2015-08-09 03:55:21 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5FgeHUOo+Lvq3LQYOtkVBnOOh2hgbtmAnE4PBkoWpF4=", "user"=>{"email"=>"diogo.azvg@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in", "locale"=>"pt-BR"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."email" = 'diogo.azvg@gmail.com'  ORDER BY "users"."id" ASC LIMIT 1
+Completed 401 Unauthorized in 127ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5FgeHUOo+Lvq3LQYOtkVBnOOh2hgbtmAnE4PBkoWpF4=", "user"=>{"email"=>"diogo.azvg@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in", "locale"=>"pt-BR"}
+  Rendered devise/shared/_links.html.erb (1.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (18.9ms)
+Completed 200 OK in 206ms (Views: 124.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/default.css?body=1" for 127.0.0.1 at 2015-08-09 03:55:22 -0300
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2015-08-09 03:55:22 -0300
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-08-09 03:55:22 -0300
+
+
+Started GET "/assets/searches.css?body=1" for 127.0.0.1 at 2015-08-09 03:55:22 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-09 03:55:22 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-09 03:55:22 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-09 03:55:22 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-09 03:55:22 -0300
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-08-09 03:55:22 -0300
+
+
+Started GET "/assets/searches.js?body=1" for 127.0.0.1 at 2015-08-09 03:55:22 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-09 03:55:22 -0300
+
+
+Started POST "/users/sign_in?locale=pt-BR" for 127.0.0.1 at 2015-08-09 03:56:30 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5FgeHUOo+Lvq3LQYOtkVBnOOh2hgbtmAnE4PBkoWpF4=", "user"=>{"email"=>"diogo.azvg@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in", "locale"=>"pt-BR"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."email" = 'diogo.azvg@gmail.com'  ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 401 Unauthorized in 108ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5FgeHUOo+Lvq3LQYOtkVBnOOh2hgbtmAnE4PBkoWpF4=", "user"=>{"email"=>"diogo.azvg@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in", "locale"=>"pt-BR"}
+  Rendered devise/shared/_links.html.erb (0.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 150ms (Views: 69.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/default.css?body=1" for 127.0.0.1 at 2015-08-09 03:56:31 -0300
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2015-08-09 03:56:31 -0300
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-08-09 03:56:31 -0300
+
+
+Started GET "/assets/searches.css?body=1" for 127.0.0.1 at 2015-08-09 03:56:31 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-09 03:56:31 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-09 03:56:31 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-09 03:56:31 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-09 03:56:31 -0300
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-08-09 03:56:31 -0300
+
+
+Started GET "/assets/searches.js?body=1" for 127.0.0.1 at 2015-08-09 03:56:31 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-09 03:56:31 -0300
+
+
+Started POST "/users/sign_in?locale=pt-BR" for 127.0.0.1 at 2015-08-09 03:57:07 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5FgeHUOo+Lvq3LQYOtkVBnOOh2hgbtmAnE4PBkoWpF4=", "user"=>{"email"=>"diogo.azvg@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in", "locale"=>"pt-BR"}
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."email" = 'diogo.azvg@gmail.com'  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 2  [["current_sign_in_at", "2015-08-09 06:57:08.027612"], ["last_sign_in_at", "2015-08-09 05:52:53.515517"], ["sign_in_count", 4], ["updated_at", "2015-08-09 06:57:08.029212"]]
+  [1m[36m (381.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/?locale=pt-BR
+Completed 302 Found in 485ms (ActiveRecord: 383.0ms)
+
+
+Started GET "/?locale=pt-BR" for 127.0.0.1 at 2015-08-09 03:57:08 -0300
+Processing by HomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered home/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 62ms (Views: 59.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/default.css?body=1" for 127.0.0.1 at 2015-08-09 03:57:08 -0300
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2015-08-09 03:57:08 -0300
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-08-09 03:57:08 -0300
+
+
+Started GET "/assets/searches.css?body=1" for 127.0.0.1 at 2015-08-09 03:57:08 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-09 03:57:08 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-09 03:57:08 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-09 03:57:08 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-09 03:57:08 -0300
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-08-09 03:57:08 -0300
+
+
+Started GET "/assets/searches.js?body=1" for 127.0.0.1 at 2015-08-09 03:57:08 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-09 03:57:08 -0300
+
+
+Started GET "/searches/new" for 127.0.0.1 at 2015-08-09 03:57:11 -0300
+Processing by SearchesController#new as HTML
+DEPRECATION WARNING: Passing a string to ActiveRecord::Base.establish_connection for a configuration lookup is deprecated, please pass a symbol (:development_postgres) instead. (called from <class:Autentication2> at /home/diogo/Programas Ruby on Rails/Transferencia/app/models/autentication2.rb:3)
+  Rendered searches/_form.html.erb (27.4ms)
+  Rendered searches/new.html.erb within layouts/application (29.8ms)
+Completed 200 OK in 350ms (Views: 99.0ms | ActiveRecord: 65.1ms)
+
+
+Started POST "/pt-BR/searches" for 127.0.0.1 at 2015-08-09 03:57:25 -0300
+Processing by SearchesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cDW/jfjtqh0xsE71lOQYbtUDwmEzHM4hAokWzN8dmTk=", "search"=>{"N_PASTA"=>"43918", "CONDICAO"=>"false"}, "commit"=>"Verificar pendência", "locale"=>"pt-BR"}
+Unpermitted parameters: CONDICAO
+  [1m[36mBiblioteca Exists (380.1ms)[0m  [1mSELECT  1 AS one FROM "nada_consta"  WHERE "nada_consta"."N_PASTA" = '43918' LIMIT 1[0m
+  [1m[35mBiblioteca Load (0.6ms)[0m  SELECT  "nada_consta".* FROM "nada_consta"  WHERE "nada_consta"."N_PASTA" = '43918' AND "nada_consta"."CONDICAO" = 'false' LIMIT 1
+  Rendered searches/show.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 474ms (Views: 75.8ms | ActiveRecord: 380.7ms)
+
+
+Started GET "/assets/default.css?body=1" for 127.0.0.1 at 2015-08-09 03:57:25 -0300
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2015-08-09 03:57:25 -0300
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-08-09 03:57:25 -0300
+
+
+Started GET "/assets/searches.css?body=1" for 127.0.0.1 at 2015-08-09 03:57:25 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-09 03:57:25 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-09 03:57:25 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-09 03:57:25 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-09 03:57:25 -0300
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-08-09 03:57:25 -0300
+
+
+Started GET "/assets/searches.js?body=1" for 127.0.0.1 at 2015-08-09 03:57:25 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-09 03:57:25 -0300
+
+
+Started POST "/pt-BR/searches" for 127.0.0.1 at 2015-08-09 04:02:55 -0300
+Processing by SearchesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cDW/jfjtqh0xsE71lOQYbtUDwmEzHM4hAokWzN8dmTk=", "search"=>{"N_PASTA"=>"43918", "CONDICAO"=>"false"}, "commit"=>"Verificar pendência", "locale"=>"pt-BR"}
+Unpermitted parameters: CONDICAO
+  [1m[36mBiblioteca Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "nada_consta"  WHERE "nada_consta"."N_PASTA" = '43918' LIMIT 1[0m
+  [1m[35mBiblioteca Load (0.5ms)[0m  SELECT  "nada_consta".* FROM "nada_consta"  WHERE "nada_consta"."N_PASTA" = '43918' AND "nada_consta"."CONDICAO" = 'false' LIMIT 1
+  Rendered searches/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 77ms (Views: 71.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/default.css?body=1" for 127.0.0.1 at 2015-08-09 04:02:55 -0300
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2015-08-09 04:02:55 -0300
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-08-09 04:02:55 -0300
+
+
+Started GET "/assets/searches.css?body=1" for 127.0.0.1 at 2015-08-09 04:02:55 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-09 04:02:55 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-09 04:02:55 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-09 04:02:55 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-09 04:02:55 -0300
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-08-09 04:02:55 -0300
+
+
+Started GET "/assets/searches.js?body=1" for 127.0.0.1 at 2015-08-09 04:02:55 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-09 04:02:55 -0300
+
+
+Started POST "/pt-BR/searches" for 127.0.0.1 at 2015-08-09 04:03:00 -0300
+Processing by SearchesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cDW/jfjtqh0xsE71lOQYbtUDwmEzHM4hAokWzN8dmTk=", "search"=>{"N_PASTA"=>"43918", "CONDICAO"=>"false"}, "commit"=>"Verificar pendência", "locale"=>"pt-BR"}
+Unpermitted parameters: CONDICAO
+  [1m[36mBiblioteca Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "nada_consta"  WHERE "nada_consta"."N_PASTA" = '43918' LIMIT 1[0m
+  [1m[35mBiblioteca Load (0.4ms)[0m  SELECT  "nada_consta".* FROM "nada_consta"  WHERE "nada_consta"."N_PASTA" = '43918' AND "nada_consta"."CONDICAO" = 'false' LIMIT 1
+  Rendered searches/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 64ms (Views: 59.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/default.css?body=1" for 127.0.0.1 at 2015-08-09 04:03:01 -0300
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2015-08-09 04:03:01 -0300
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-08-09 04:03:01 -0300
+
+
+Started GET "/assets/searches.css?body=1" for 127.0.0.1 at 2015-08-09 04:03:01 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-09 04:03:01 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-09 04:03:01 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-09 04:03:01 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-09 04:03:01 -0300
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-08-09 04:03:01 -0300
+
+
+Started GET "/assets/searches.js?body=1" for 127.0.0.1 at 2015-08-09 04:03:01 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-09 04:03:01 -0300
+
+
+Started POST "/pt-BR/searches" for 127.0.0.1 at 2015-08-09 04:03:39 -0300
+Processing by SearchesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cDW/jfjtqh0xsE71lOQYbtUDwmEzHM4hAokWzN8dmTk=", "search"=>{"N_PASTA"=>"43918", "CONDICAO"=>"false"}, "commit"=>"Verificar pendência", "locale"=>"pt-BR"}
+Unpermitted parameters: CONDICAO
+  [1m[36mBiblioteca Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "nada_consta"  WHERE "nada_consta"."N_PASTA" = '43918' LIMIT 1[0m
+  [1m[35mBiblioteca Load (0.4ms)[0m  SELECT  "nada_consta".* FROM "nada_consta"  WHERE "nada_consta"."N_PASTA" = '43918' AND "nada_consta"."CONDICAO" = 'false' LIMIT 1
+  Rendered searches/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 69ms (Views: 64.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/default.css?body=1" for 127.0.0.1 at 2015-08-09 04:03:39 -0300
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2015-08-09 04:03:39 -0300
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-08-09 04:03:39 -0300
+
+
+Started GET "/assets/searches.css?body=1" for 127.0.0.1 at 2015-08-09 04:03:39 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-09 04:03:39 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-09 04:03:39 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-09 04:03:39 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-09 04:03:39 -0300
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-08-09 04:03:39 -0300
+
+
+Started GET "/assets/searches.js?body=1" for 127.0.0.1 at 2015-08-09 04:03:39 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-09 04:03:39 -0300
+
+
+Started POST "/pt-BR/searches" for 127.0.0.1 at 2015-08-09 04:03:53 -0300
+Processing by SearchesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cDW/jfjtqh0xsE71lOQYbtUDwmEzHM4hAokWzN8dmTk=", "search"=>{"N_PASTA"=>"41600", "CONDICAO"=>"false"}, "commit"=>"Verificar pendência", "locale"=>"pt-BR"}
+Unpermitted parameters: CONDICAO
+  [1m[36mBiblioteca Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "nada_consta"  WHERE "nada_consta"."N_PASTA" = '41600' LIMIT 1[0m
+Redirected to http://localhost:3000/searches/new
+Completed 302 Found in 4ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/searches/new" for 127.0.0.1 at 2015-08-09 04:03:53 -0300
+Processing by SearchesController#new as HTML
+  Rendered searches/_form.html.erb (3.0ms)
+  Rendered searches/new.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 66ms (Views: 65.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/default.css?body=1" for 127.0.0.1 at 2015-08-09 04:03:53 -0300
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2015-08-09 04:03:53 -0300
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-08-09 04:03:53 -0300
+
+
+Started GET "/assets/searches.css?body=1" for 127.0.0.1 at 2015-08-09 04:03:53 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-09 04:03:53 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-09 04:03:53 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-09 04:03:53 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-09 04:03:53 -0300
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-08-09 04:03:53 -0300
+
+
+Started GET "/assets/searches.js?body=1" for 127.0.0.1 at 2015-08-09 04:03:53 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-09 04:03:53 -0300
+
+
+Started GET "/searches/new" for 127.0.0.1 at 2015-08-09 04:05:31 -0300
+Processing by SearchesController#new as HTML
+  Rendered searches/_form.html.erb (3.1ms)
+  Rendered searches/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 72ms (Views: 70.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/default.css?body=1" for 127.0.0.1 at 2015-08-09 04:05:31 -0300
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2015-08-09 04:05:31 -0300
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-08-09 04:05:31 -0300
+
+
+Started GET "/assets/searches.css?body=1" for 127.0.0.1 at 2015-08-09 04:05:31 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-09 04:05:31 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-09 04:05:31 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-09 04:05:31 -0300
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-08-09 04:05:31 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-09 04:05:31 -0300
+
+
+Started GET "/assets/searches.js?body=1" for 127.0.0.1 at 2015-08-09 04:05:31 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-09 04:05:31 -0300
+
+
+Started GET "/pt-BR/searches" for 127.0.0.1 at 2015-08-13 22:44:18 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchesController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendered searches/index.html.erb within layouts/application (6.2ms)
+Completed 500 Internal Server Error in 180ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    10:   </thead>
+    11: 
+    12:   <tbody>
+    13:     <% @searches.each do |search| %>
+    14:       <tr>
+    15:         <td><%= search.name %></td>
+    16:         <td><%= search.folder %></td>
+  app/views/searches/index.html.erb:13:in `_app_views_searches_index_html_erb__4501107769375532285_70273303044840'
+
+
+  Rendered /home/diogo/.gem/repos/projetos/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/diogo/.gem/repos/projetos/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/diogo/.gem/repos/projetos/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (13.2ms)
+
+
+Started POST "/pt-BR/searches" for 127.0.0.1 at 2015-08-13 22:44:23 -0300
+Processing by SearchesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cDW/jfjtqh0xsE71lOQYbtUDwmEzHM4hAokWzN8dmTk=", "search"=>{"N_PASTA"=>"43918", "CONDICAO"=>"false"}, "commit"=>"Verificar pendência", "locale"=>"pt-BR"}
+DEPRECATION WARNING: Passing a string to ActiveRecord::Base.establish_connection for a configuration lookup is deprecated, please pass a symbol (:development_postgres) instead. (called from <class:Autentication2> at /home/diogo/Programas Ruby on Rails/Transferencia/app/models/autentication2.rb:3)
+Unpermitted parameters: CONDICAO
+  [1m[35mBiblioteca Exists (41.3ms)[0m  SELECT  1 AS one FROM "nada_consta"  WHERE "nada_consta"."N_PASTA" = '43918' LIMIT 1
+  [1m[36mBiblioteca Load (0.6ms)[0m  [1mSELECT  "nada_consta".* FROM "nada_consta"  WHERE "nada_consta"."N_PASTA" = '43918' AND "nada_consta"."CONDICAO" = 'false' LIMIT 1[0m
+  Rendered searches/show.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 881ms (Views: 322.6ms | ActiveRecord: 401.9ms)
+
+
+Started GET "/assets/default.css?body=1" for 127.0.0.1 at 2015-08-13 22:44:24 -0300
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2015-08-13 22:44:24 -0300
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-08-13 22:44:24 -0300
+
+
+Started GET "/assets/searches.css?body=1" for 127.0.0.1 at 2015-08-13 22:44:24 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-13 22:44:24 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-13 22:44:24 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-13 22:44:24 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-13 22:44:24 -0300
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-08-13 22:44:24 -0300
+
+
+Started GET "/assets/searches.js?body=1" for 127.0.0.1 at 2015-08-13 22:44:24 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-13 22:44:24 -0300
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2015-08-13 22:53:24 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Devise::RegistrationsController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1
+Redirected to http://localhost:3000/?locale=pt-BR
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 41ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/?locale=pt-BR" for 127.0.0.1 at 2015-08-13 22:53:24 -0300
+Processing by HomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 188ms (Views: 186.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/default.css?body=1" for 127.0.0.1 at 2015-08-13 22:53:24 -0300
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2015-08-13 22:53:24 -0300
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-08-13 22:53:24 -0300
+
+
+Started GET "/assets/searches.css?body=1" for 127.0.0.1 at 2015-08-13 22:53:24 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-13 22:53:24 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-13 22:53:24 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-13 22:53:24 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-13 22:53:24 -0300
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-08-13 22:53:24 -0300
+
+
+Started GET "/assets/searches.js?body=1" for 127.0.0.1 at 2015-08-13 22:53:24 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-13 22:53:24 -0300
+
+
+Started DELETE "/users/sign_out?locale=pt-BR" for 127.0.0.1 at 2015-08-13 22:53:43 -0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"cDW/jfjtqh0xsE71lOQYbtUDwmEzHM4hAokWzN8dmTk=", "locale"=>"pt-BR"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/?locale=pt-BR
+Completed 302 Found in 30ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/?locale=pt-BR" for 127.0.0.1 at 2015-08-13 22:53:43 -0300
+Processing by HomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendered home/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 65ms (Views: 63.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/default.css?body=1" for 127.0.0.1 at 2015-08-13 22:53:43 -0300
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2015-08-13 22:53:43 -0300
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-08-13 22:53:43 -0300
+
+
+Started GET "/assets/searches.css?body=1" for 127.0.0.1 at 2015-08-13 22:53:43 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-13 22:53:43 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-13 22:53:43 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-13 22:53:43 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-13 22:53:43 -0300
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-08-13 22:53:43 -0300
+
+
+Started GET "/assets/searches.js?body=1" for 127.0.0.1 at 2015-08-13 22:53:43 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-13 22:53:43 -0300
+
+
+Started GET "/users/sign_in?locale=pt-BR" for 127.0.0.1 at 2015-08-13 22:53:47 -0300
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendered devise/shared/_links.html.erb (3.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (112.4ms)
+Completed 200 OK in 184ms (Views: 182.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in?locale=pt-BR" for 127.0.0.1 at 2015-08-13 22:53:55 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"b7C8KJS428WgWaKe54wYSQX1R23Fu+LK4NVhcgulWNk=", "user"=>{"email"=>"diogo.azvg@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in", "locale"=>"pt-BR"}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."email" = 'diogo.azvg@gmail.com'  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 2[0m  [["current_sign_in_at", "2015-08-14 01:53:55.519070"], ["last_sign_in_at", "2015-08-09 06:57:08.027612"], ["sign_in_count", 5], ["updated_at", "2015-08-14 01:53:55.520536"]]
+  [1m[35m (154.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/?locale=pt-BR
+Completed 302 Found in 318ms (ActiveRecord: 155.9ms)
+
+
+Started GET "/?locale=pt-BR" for 127.0.0.1 at 2015-08-13 22:53:55 -0300
+Processing by HomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 60ms (Views: 58.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/default.css?body=1" for 127.0.0.1 at 2015-08-13 22:53:55 -0300
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2015-08-13 22:53:55 -0300
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-08-13 22:53:55 -0300
+
+
+Started GET "/assets/searches.css?body=1" for 127.0.0.1 at 2015-08-13 22:53:55 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-13 22:53:55 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-13 22:53:55 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-13 22:53:55 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-13 22:53:55 -0300
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-08-13 22:53:55 -0300
+
+
+Started GET "/assets/searches.js?body=1" for 127.0.0.1 at 2015-08-13 22:53:55 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-13 22:53:55 -0300
+
+
+Started GET "/searches/new" for 127.0.0.1 at 2015-08-13 22:54:05 -0300
+
+ActionController::RoutingError (undefined method `before_action' for main:Object):
+  app/controllers/searches_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /home/diogo/.gem/repos/projetos/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/diogo/.gem/repos/projetos/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (11.2ms)
+  Rendered /home/diogo/.gem/repos/projetos/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.5ms)
+  Rendered /home/diogo/.gem/repos/projetos/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (102.0ms)
+
+
+Started GET "/searches/new" for 127.0.0.1 at 2015-08-13 22:54:05 -0300
+
+ActionController::RoutingError (undefined method `before_action' for main:Object):
+  app/controllers/searches_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /home/diogo/.gem/repos/projetos/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /home/diogo/.gem/repos/projetos/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (6.7ms)
+  Rendered /home/diogo/.gem/repos/projetos/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /home/diogo/.gem/repos/projetos/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (94.0ms)
+
+
+Started GET "/searches/new" for 127.0.0.1 at 2015-08-13 23:01:07 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActionController::RoutingError (undefined method `before_action' for main:Object):
+  app/controllers/searches_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /home/diogo/.gem/repos/projetos/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/diogo/.gem/repos/projetos/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (6.2ms)
+  Rendered /home/diogo/.gem/repos/projetos/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.8ms)
+  Rendered /home/diogo/.gem/repos/projetos/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (100.9ms)
+
+
+Started GET "/searches/new" for 127.0.0.1 at 2015-08-13 23:01:07 -0300
+
+ActionController::RoutingError (undefined method `before_action' for main:Object):
+  app/controllers/searches_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /home/diogo/.gem/repos/projetos/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/diogo/.gem/repos/projetos/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (6.5ms)
+  Rendered /home/diogo/.gem/repos/projetos/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /home/diogo/.gem/repos/projetos/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (92.0ms)
+
+
+Started GET "/searches/new" for 127.0.0.1 at 2015-08-13 23:01:57 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActionController::RoutingError (undefined method `before_action' for main:Object):
+  app/controllers/searches_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /home/diogo/.gem/repos/projetos/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/diogo/.gem/repos/projetos/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (6.4ms)
+  Rendered /home/diogo/.gem/repos/projetos/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.8ms)
+  Rendered /home/diogo/.gem/repos/projetos/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (98.9ms)
+
+
+Started GET "/searches/new" for 127.0.0.1 at 2015-08-13 23:01:57 -0300
+
+ActionController::RoutingError (undefined method `before_action' for main:Object):
+  app/controllers/searches_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /home/diogo/.gem/repos/projetos/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /home/diogo/.gem/repos/projetos/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (6.6ms)
+  Rendered /home/diogo/.gem/repos/projetos/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /home/diogo/.gem/repos/projetos/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (91.1ms)
+
+
+Started DELETE "/users/sign_out?locale=pt-BR" for 127.0.0.1 at 2015-08-13 23:02:05 -0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"VTrgZWw4mmO1OkhHh1q43pr2A4qgkSnQAVXgHP6sktg=", "locale"=>"pt-BR"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/?locale=pt-BR
+Completed 302 Found in 59ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/?locale=pt-BR" for 127.0.0.1 at 2015-08-13 23:02:05 -0300
+Processing by HomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendered home/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 97ms (Views: 95.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/default.css?body=1" for 127.0.0.1 at 2015-08-13 23:02:05 -0300
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2015-08-13 23:02:05 -0300
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-08-13 23:02:05 -0300
+
+
+Started GET "/assets/searches.css?body=1" for 127.0.0.1 at 2015-08-13 23:02:05 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-13 23:02:05 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-13 23:02:05 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-13 23:02:05 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-13 23:02:05 -0300
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-08-13 23:02:05 -0300
+
+
+Started GET "/assets/searches.js?body=1" for 127.0.0.1 at 2015-08-13 23:02:05 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-13 23:02:05 -0300
+
+
+Started GET "/users/sign_in?locale=pt-BR" for 127.0.0.1 at 2015-08-13 23:02:07 -0300
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendered devise/shared/_links.html.erb (2.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 83ms (Views: 80.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in?locale=pt-BR" for 127.0.0.1 at 2015-08-13 23:02:16 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Z241maYPZbaAZjQtk44TrKBAJ5EOYAhvYx2GsM710Go=", "user"=>{"email"=>"diogo.azvg@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in", "locale"=>"pt-BR"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."email" = 'diogo.azvg@gmail.com'  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 2[0m  [["current_sign_in_at", "2015-08-14 02:02:16.577456"], ["last_sign_in_at", "2015-08-14 01:53:55.519070"], ["sign_in_count", 6], ["updated_at", "2015-08-14 02:02:16.578859"]]
+  [1m[35m (125.3ms)[0m  commit transaction
+Redirected to http://localhost:3000/?locale=pt-BR
+Completed 302 Found in 239ms (ActiveRecord: 126.3ms)
+
+
+Started GET "/?locale=pt-BR" for 127.0.0.1 at 2015-08-13 23:02:16 -0300
+Processing by HomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 63ms (Views: 61.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/default.css?body=1" for 127.0.0.1 at 2015-08-13 23:02:16 -0300
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2015-08-13 23:02:16 -0300
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-08-13 23:02:16 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-13 23:02:16 -0300
+
+
+Started GET "/assets/searches.css?body=1" for 127.0.0.1 at 2015-08-13 23:02:16 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-13 23:02:16 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-13 23:02:16 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-13 23:02:16 -0300
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-08-13 23:02:16 -0300
+
+
+Started GET "/assets/searches.js?body=1" for 127.0.0.1 at 2015-08-13 23:02:16 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-13 23:02:16 -0300
+
+
+Started GET "/searches/new" for 127.0.0.1 at 2015-08-13 23:02:20 -0300
+
+ActionController::RoutingError (undefined method `before_action' for main:Object):
+  app/controllers/searches_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /home/diogo/.gem/repos/projetos/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/diogo/.gem/repos/projetos/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (6.5ms)
+  Rendered /home/diogo/.gem/repos/projetos/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /home/diogo/.gem/repos/projetos/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (92.5ms)
+
+
+Started GET "/searches/new" for 127.0.0.1 at 2015-08-13 23:02:20 -0300
+
+ActionController::RoutingError (undefined method `before_action' for main:Object):
+  app/controllers/searches_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /home/diogo/.gem/repos/projetos/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/diogo/.gem/repos/projetos/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (6.5ms)
+  Rendered /home/diogo/.gem/repos/projetos/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /home/diogo/.gem/repos/projetos/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (102.4ms)
+
+
+Started GET "/searches/new" for 127.0.0.1 at 2015-08-13 23:04:29 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchesController#new as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1
+DEPRECATION WARNING: Passing a string to ActiveRecord::Base.establish_connection for a configuration lookup is deprecated, please pass a symbol (:development_postgres) instead. (called from <class:Autentication2> at /home/diogo/Programas Ruby on Rails/Transferencia/app/models/autentication2.rb:3)
+  Rendered searches/_form.html.erb (36.9ms)
+  Rendered searches/new.html.erb within layouts/application (75.6ms)
+Completed 200 OK in 291ms (Views: 188.6ms | ActiveRecord: 13.5ms)
+
+
+Started GET "/pt-BR/searches" for 127.0.0.1 at 2015-08-13 23:06:53 -0300
+Processing by SearchesController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered searches/index.html.erb within layouts/application (2.8ms)
+Completed 500 Internal Server Error in 7ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    10:   </thead>
+    11: 
+    12:   <tbody>
+    13:     <% @searches.each do |search| %>
+    14:       <tr>
+    15:         <td><%= search.name %></td>
+    16:         <td><%= search.folder %></td>
+  app/views/searches/index.html.erb:13:in `_app_views_searches_index_html_erb__958324036344893301_70258695383060'
+
+
+  Rendered /home/diogo/.gem/repos/projetos/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/diogo/.gem/repos/projetos/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/diogo/.gem/repos/projetos/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (14.5ms)
+
+
+Started GET "/pt-BR/searches" for 127.0.0.1 at 2015-08-13 23:06:53 -0300
+Processing by SearchesController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered searches/index.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    10:   </thead>
+    11: 
+    12:   <tbody>
+    13:     <% @searches.each do |search| %>
+    14:       <tr>
+    15:         <td><%= search.name %></td>
+    16:         <td><%= search.folder %></td>
+  app/views/searches/index.html.erb:13:in `_app_views_searches_index_html_erb__958324036344893301_70258693304880'
+
+
+  Rendered /home/diogo/.gem/repos/projetos/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/diogo/.gem/repos/projetos/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/diogo/.gem/repos/projetos/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.6ms)
+
+
+Started POST "/pt-BR/searches" for 127.0.0.1 at 2015-08-13 23:12:02 -0300
+Processing by SearchesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"A/1+ZcU1lLJ0jt9NURVToTx2Fo4W8fS5lDeWRKqcAe4=", "search"=>{"N_PASTA"=>"", "CONDICAO"=>"false"}, "commit"=>"Verificar pendência", "locale"=>"pt-BR"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1[0m
+Unpermitted parameters: CONDICAO
+  [1m[35mBiblioteca Exists (1.2ms)[0m  SELECT  1 AS one FROM "nada_consta"  WHERE "nada_consta"."N_PASTA" = '' LIMIT 1
+Redirected to http://localhost:3000/searches/new
+Completed 302 Found in 13ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/searches/new" for 127.0.0.1 at 2015-08-13 23:12:02 -0300
+Processing by SearchesController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered searches/_form.html.erb (2.5ms)
+  Rendered searches/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 70ms (Views: 67.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/default.css?body=1" for 127.0.0.1 at 2015-08-13 23:12:02 -0300
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2015-08-13 23:12:02 -0300
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-08-13 23:12:02 -0300
+
+
+Started GET "/assets/searches.css?body=1" for 127.0.0.1 at 2015-08-13 23:12:02 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-13 23:12:02 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-13 23:12:02 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-13 23:12:02 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-13 23:12:02 -0300
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-08-13 23:12:02 -0300
+
+
+Started GET "/assets/searches.js?body=1" for 127.0.0.1 at 2015-08-13 23:12:02 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-13 23:12:02 -0300
+
+
+Started POST "/pt-BR/searches" for 127.0.0.1 at 2015-08-13 23:16:54 -0300
+Processing by SearchesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"A/1+ZcU1lLJ0jt9NURVToTx2Fo4W8fS5lDeWRKqcAe4=", "search"=>{"N_PASTA"=>"", "CONDICAO"=>"false"}, "commit"=>"Verificar pendência", "locale"=>"pt-BR"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1
+DEPRECATION WARNING: Passing a string to ActiveRecord::Base.establish_connection for a configuration lookup is deprecated, please pass a symbol (:development_postgres) instead. (called from <class:Autentication2> at /home/diogo/Programas Ruby on Rails/Transferencia/app/models/autentication2.rb:3)
+Unpermitted parameters: CONDICAO
+  [1m[36mBiblioteca Exists (1.0ms)[0m  [1mSELECT  1 AS one FROM "nada_consta"  WHERE "nada_consta"."N_PASTA" = '' LIMIT 1[0m
+Redirected to http://localhost:3000/searches/new
+Completed 302 Found in 50ms (ActiveRecord: 14.5ms)
+
+
+Started GET "/searches/new" for 127.0.0.1 at 2015-08-13 23:16:54 -0300
+Processing by SearchesController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1
+Completed 500 Internal Server Error in 4ms
+
+SyntaxError (/home/diogo/Programas Ruby on Rails/Transferencia/app/models/search.rb:4: syntax error, unexpected ':', expecting keyword_end):
+  app/controllers/searches_controller.rb:8:in `new'
+
+
+  Rendered /home/diogo/.gem/repos/projetos/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.3ms)
+  Rendered /home/diogo/.gem/repos/projetos/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/diogo/.gem/repos/projetos/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/diogo/.gem/repos/projetos/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (26.2ms)
+
+
+Started GET "/users/sign_in?locale=pt-BR" for 127.0.0.1 at 2015-08-13 23:18:16 -0300
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1[0m
+Redirected to http://localhost:3000/?locale=pt-BR
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/default.css?body=1" for 127.0.0.1 at 2015-08-13 23:18:16 -0300
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2015-08-13 23:18:16 -0300
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-08-13 23:18:16 -0300
+
+
+Started GET "/assets/searches.css?body=1" for 127.0.0.1 at 2015-08-13 23:18:16 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-13 23:18:16 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-13 23:18:16 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-13 23:18:16 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-13 23:18:16 -0300
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-08-13 23:18:16 -0300
+
+
+Started GET "/assets/searches.js?body=1" for 127.0.0.1 at 2015-08-13 23:18:16 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-13 23:18:16 -0300
+
+
+Started GET "/searches/new" for 127.0.0.1 at 2015-08-13 23:18:19 -0300
+Processing by SearchesController#new as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1
+Completed 500 Internal Server Error in 4ms
+
+SyntaxError (/home/diogo/Programas Ruby on Rails/Transferencia/app/models/search.rb:4: syntax error, unexpected ':', expecting keyword_end):
+  app/controllers/searches_controller.rb:8:in `new'
+
+
+  Rendered /home/diogo/.gem/repos/projetos/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /home/diogo/.gem/repos/projetos/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/diogo/.gem/repos/projetos/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/diogo/.gem/repos/projetos/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.7ms)
+
+
+Started GET "/searches/new" for 127.0.0.1 at 2015-08-13 23:18:32 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchesController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1
+Completed 500 Internal Server Error in 32ms
+
+SyntaxError (/home/diogo/Programas Ruby on Rails/Transferencia/app/models/search.rb:4: syntax error, unexpected ':', expecting keyword_end):
+  app/controllers/searches_controller.rb:8:in `new'
+
+
+  Rendered /home/diogo/.gem/repos/projetos/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /home/diogo/.gem/repos/projetos/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/diogo/.gem/repos/projetos/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/diogo/.gem/repos/projetos/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.2ms)
+
+
+Started GET "/searches/new" for 127.0.0.1 at 2015-08-13 23:18:36 -0300
+Processing by SearchesController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 500 Internal Server Error in 5ms
+
+SyntaxError (/home/diogo/Programas Ruby on Rails/Transferencia/app/models/search.rb:4: syntax error, unexpected ':', expecting keyword_end):
+  app/controllers/searches_controller.rb:8:in `new'
+
+
+  Rendered /home/diogo/.gem/repos/projetos/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /home/diogo/.gem/repos/projetos/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /home/diogo/.gem/repos/projetos/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/diogo/.gem/repos/projetos/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.9ms)
+
+
+Started GET "/searches/new" for 127.0.0.1 at 2015-08-13 23:18:36 -0300
+Processing by SearchesController#new as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1
+Completed 500 Internal Server Error in 4ms
+
+SyntaxError (/home/diogo/Programas Ruby on Rails/Transferencia/app/models/search.rb:4: syntax error, unexpected ':', expecting keyword_end):
+  app/controllers/searches_controller.rb:8:in `new'
+
+
+  Rendered /home/diogo/.gem/repos/projetos/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /home/diogo/.gem/repos/projetos/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/diogo/.gem/repos/projetos/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/diogo/.gem/repos/projetos/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.7ms)
+
+
+Started GET "/searches/new" for 127.0.0.1 at 2015-08-13 23:18:58 -0300
+Processing by SearchesController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1[0m
+DEPRECATION WARNING: Passing a string to ActiveRecord::Base.establish_connection for a configuration lookup is deprecated, please pass a symbol (:development_postgres) instead. (called from <class:Autentication2> at /home/diogo/Programas Ruby on Rails/Transferencia/app/models/autentication2.rb:3)
+  Rendered searches/_form.html.erb (13.8ms)
+  Rendered searches/new.html.erb within layouts/application (31.5ms)
+Completed 200 OK in 188ms (Views: 121.9ms | ActiveRecord: 12.2ms)
+
+
+Started GET "/assets/default.css?body=1" for 127.0.0.1 at 2015-08-13 23:18:58 -0300
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2015-08-13 23:18:58 -0300
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-08-13 23:18:58 -0300
+
+
+Started GET "/assets/searches.css?body=1" for 127.0.0.1 at 2015-08-13 23:18:58 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-13 23:18:58 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-13 23:18:58 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-13 23:18:58 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-13 23:18:58 -0300
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-08-13 23:18:58 -0300
+
+
+Started GET "/assets/searches.js?body=1" for 127.0.0.1 at 2015-08-13 23:18:58 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-13 23:18:58 -0300
+
+
+Started POST "/pt-BR/searches" for 127.0.0.1 at 2015-08-13 23:19:55 -0300
+Processing by SearchesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"A/1+ZcU1lLJ0jt9NURVToTx2Fo4W8fS5lDeWRKqcAe4=", "search"=>{"N_PASTA"=>"", "CONDICAO"=>"false"}, "commit"=>"Verificar pendência", "locale"=>"pt-BR"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1
+DEPRECATION WARNING: Passing a string to ActiveRecord::Base.establish_connection for a configuration lookup is deprecated, please pass a symbol (:development_postgres) instead. (called from <class:Autentication2> at /home/diogo/Programas Ruby on Rails/Transferencia/app/models/autentication2.rb:3)
+Unpermitted parameters: CONDICAO
+  [1m[36mBiblioteca Exists (1.0ms)[0m  [1mSELECT  1 AS one FROM "nada_consta"  WHERE "nada_consta"."N_PASTA" = '' LIMIT 1[0m
+Redirected to http://localhost:3000/searches/new
+Completed 302 Found in 55ms (ActiveRecord: 12.4ms)
+
+
+Started GET "/searches/new" for 127.0.0.1 at 2015-08-13 23:19:56 -0300
+Processing by SearchesController#new as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered searches/_form.html.erb (4.9ms)
+  Rendered searches/new.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 70ms (Views: 64.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/default.css?body=1" for 127.0.0.1 at 2015-08-13 23:19:56 -0300
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2015-08-13 23:19:56 -0300
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-08-13 23:19:56 -0300
+
+
+Started GET "/assets/searches.css?body=1" for 127.0.0.1 at 2015-08-13 23:19:56 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-13 23:19:56 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-13 23:19:56 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-13 23:19:56 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-13 23:19:56 -0300
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-08-13 23:19:56 -0300
+
+
+Started GET "/assets/searches.js?body=1" for 127.0.0.1 at 2015-08-13 23:19:56 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-13 23:19:56 -0300
+
+
+Started POST "/pt-BR/searches" for 127.0.0.1 at 2015-08-13 23:21:17 -0300
+Processing by SearchesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"A/1+ZcU1lLJ0jt9NURVToTx2Fo4W8fS5lDeWRKqcAe4=", "search"=>{"N_PASTA"=>"43918", "CONDICAO"=>"false"}, "commit"=>"Verificar pendência", "locale"=>"pt-BR"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1[0m
+Unpermitted parameters: CONDICAO
+  [1m[35mBiblioteca Exists (0.5ms)[0m  SELECT  1 AS one FROM "nada_consta"  WHERE "nada_consta"."N_PASTA" = '43918' LIMIT 1
+  [1m[36mBiblioteca Load (0.6ms)[0m  [1mSELECT  "nada_consta".* FROM "nada_consta"  WHERE "nada_consta"."N_PASTA" = '43918' AND "nada_consta"."CONDICAO" = 'false' LIMIT 1[0m
+  Rendered searches/show.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 73ms (Views: 65.0ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/default.css?body=1" for 127.0.0.1 at 2015-08-13 23:21:17 -0300
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2015-08-13 23:21:17 -0300
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-08-13 23:21:17 -0300
+
+
+Started GET "/assets/searches.css?body=1" for 127.0.0.1 at 2015-08-13 23:21:17 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-13 23:21:17 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-13 23:21:17 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-13 23:21:17 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-13 23:21:17 -0300
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-08-13 23:21:17 -0300
+
+
+Started GET "/assets/searches.js?body=1" for 127.0.0.1 at 2015-08-13 23:21:17 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-13 23:21:17 -0300
+
+
+Started POST "/pt-BR/searches" for 127.0.0.1 at 2015-08-13 23:35:02 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"A/1+ZcU1lLJ0jt9NURVToTx2Fo4W8fS5lDeWRKqcAe4=", "search"=>{"N_PASTA"=>"43918", "CONDICAO"=>"false"}, "commit"=>"Verificar pendência", "locale"=>"pt-BR"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1
+DEPRECATION WARNING: Passing a string to ActiveRecord::Base.establish_connection for a configuration lookup is deprecated, please pass a symbol (:development_postgres) instead. (called from <class:Autentication2> at /home/diogo/Programas Ruby on Rails/Transferencia/app/models/autentication2.rb:3)
+Unpermitted parameters: CONDICAO
+  [1m[36mBiblioteca Exists (1.1ms)[0m  [1mSELECT  1 AS one FROM "nada_consta"  WHERE "nada_consta"."N_PASTA" = '43918' LIMIT 1[0m
+  [1m[35mBiblioteca Load (0.6ms)[0m  SELECT  "nada_consta".* FROM "nada_consta"  WHERE "nada_consta"."N_PASTA" = '43918' AND "nada_consta"."CONDICAO" = 'false' LIMIT 1
+  Rendered searches/new2.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 224ms (Views: 119.4ms | ActiveRecord: 16.2ms)
+
+
+Started GET "/assets/default.css?body=1" for 127.0.0.1 at 2015-08-13 23:35:02 -0300
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2015-08-13 23:35:02 -0300
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-08-13 23:35:02 -0300
+
+
+Started GET "/assets/searches.css?body=1" for 127.0.0.1 at 2015-08-13 23:35:02 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-13 23:35:02 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-13 23:35:02 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-13 23:35:02 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-13 23:35:02 -0300
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-08-13 23:35:02 -0300
+
+
+Started GET "/assets/searches.js?body=1" for 127.0.0.1 at 2015-08-13 23:35:02 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-13 23:35:02 -0300
+
+
+Started POST "/pt-BR/searches" for 127.0.0.1 at 2015-08-13 23:36:50 -0300
+Processing by SearchesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"A/1+ZcU1lLJ0jt9NURVToTx2Fo4W8fS5lDeWRKqcAe4=", "search"=>{"N_PASTA"=>"43918", "CONDICAO"=>"false"}, "commit"=>"Verificar pendência", "locale"=>"pt-BR"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1[0m
+Unpermitted parameters: CONDICAO
+  [1m[35mBiblioteca Exists (0.4ms)[0m  SELECT  1 AS one FROM "nada_consta"  WHERE "nada_consta"."N_PASTA" = '43918' LIMIT 1
+  [1m[36mBiblioteca Load (0.4ms)[0m  [1mSELECT  "nada_consta".* FROM "nada_consta"  WHERE "nada_consta"."N_PASTA" = '43918' AND "nada_consta"."CONDICAO" = 'false' LIMIT 1[0m
+  Rendered searches/new2.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 71ms (Views: 64.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/default.css?body=1" for 127.0.0.1 at 2015-08-13 23:36:50 -0300
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2015-08-13 23:36:50 -0300
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-08-13 23:36:50 -0300
+
+
+Started GET "/assets/searches.css?body=1" for 127.0.0.1 at 2015-08-13 23:36:50 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-13 23:36:50 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-13 23:36:50 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-13 23:36:50 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-13 23:36:50 -0300
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-08-13 23:36:50 -0300
+
+
+Started GET "/assets/searches.js?body=1" for 127.0.0.1 at 2015-08-13 23:36:50 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-13 23:36:50 -0300

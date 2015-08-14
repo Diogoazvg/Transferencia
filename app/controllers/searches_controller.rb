@@ -1,4 +1,9 @@
 class SearchesController < ApplicationController
+    before_action :authenticate_user!
+    before_action :user_signed_in?
+    before_action :current_user
+    before_action :user_session
+    attr_accessor :N_PASTA
   
     def new
         @search = Search.new
