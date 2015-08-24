@@ -1,29 +1,40 @@
-<h2>Sign up</h2>
+<h2>Criar conta</h2>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= devise_error_messages! %>
 
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true %>
-  </div>
+<section>
+    <fieldset>
+        <article>
+            <p>
+                <%= f.label :email %><br />
+                <%= f.email_field :email, autofocus: true %>
+            </p>    
+        </article>
 
-  <div class="field">
-    <%= f.label :password %>
-    <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
-    <% end %><br />
-    <%= f.password_field :password, autocomplete: "off" %>
-  </div>
+        <article>
+            <p>
+                <%= f.label :password %>
+                <% if @minimum_password_length %>
+                <em>(<%= @minimum_password_length %> mínimo de caracteres)</em>
+                <% end %><br />
+                <%= f.password_field :password, autocomplete: "off" %>
+            </p>    
+        </article>
 
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "off" %>
-  </div>
+        <article>
+            <p>
+                <%= f.label :password_confirmation %><br />
+                <%= f.password_field :password_confirmation, autocomplete: "off" %>
+            </p>        
+        </article>
 
-  <div class="actions">
-    <%= f.submit "Sign up" %>
-  </div>
+        <button>
+            <%= f.submit "Criar conta" %>
+        </button>
 <% end %>
-
-<%= render "users/shared/links" %>
+        <article>
+            <%= render "users/shared/links" %>
+        </article>
+    </fieldset>    
+</section>
