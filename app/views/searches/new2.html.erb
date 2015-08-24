@@ -1,1 +1,5 @@
-<h1>Página do Coordenador.</h1>
+<%if current_user.admin?%>
+  <h1>Página do Coordenador.</h1>
+  <%else%>
+  	<h1>Você não é coordenador, não pode acessar esse conteúdo.</h1>
+<%end%>

@@ -3,7 +3,7 @@ class SearchesController < ApplicationController
     before_action :user_signed_in?
     before_action :current_user
     before_action :user_session
-    attr_accessor :N_PASTA
+    #attr_accessor :N_PASTA
   
     def new
         @search = Search.new
@@ -13,11 +13,10 @@ class SearchesController < ApplicationController
     	@search2 = Biblioteca.exists?(search_params)
     	if @search2
 
-    		@search = Biblioteca.find_by(search_params2)
-    		#@search_in_academico = Academico.find_by_N_PASTA(@search.N_PASTA)
+    		@search = Biblioteca.find_by(search_params2)		
     		#@search_in_academico = Alunos.where(N_PASTA: @search.N_PASTA).first
-    		#@search_in_academico = Alunos.where(search_params).first
-            	if @search
+            @search_in_academico = Aluno.teste	
+                if @search
             		flash[:notice] = 'Sem pendências pode prosseguir.'
                 	render :show
             	else
@@ -31,6 +30,7 @@ class SearchesController < ApplicationController
     end
 
     def show
+        render :new2
     end
 
     def search_params
@@ -41,15 +41,3 @@ class SearchesController < ApplicationController
         params.require(:search).permit(:N_PASTA, :CONDICAO)
     end
 end
-#SELECT  "nada_consta".* FROM "nada_consta"  WHERE (:N_PASTA = 43918) LIMIT 1
-#SELECT  "nada_consta".* FROM "nada_consta"  WHERE "nada_consta"."N_PASTA" = '43918' LIMIT 1
-#SELECT  "nada_consta".* FROM "nada_consta"  WHERE (N_PASTA =43918 and CONDICAO ='f') LIMIT 1
-#SELECT  "nada_consta".* FROM "nada_consta"  WHERE "nada_consta"."nada_consta" IN ('N_PASTA =? and CONDICAO =?', 43918, 'f') LIMIT 1
-#SELECT  "nada_consta".* FROM "nada_consta"  WHERE (CONDICAO = 't' N_PASTA = 43918) LIMIT 1
-#SELECT  "nada_consta".* FROM "nada_consta"  WHERE "nada_consta"."conditions" = ':N_PASTA = ''43918''' LIMIT 1
-
-#if not livro.nil?
-        #render :text => "Livro: " + livro.titulo
-      #else
-        #render :text => "Livro não encontrado"
-      #end
