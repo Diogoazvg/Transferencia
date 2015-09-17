@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  NOME: MyString
+  N_PASTA: MyString
+  CONDICAO: false
+
+two:
+  NOME: MyString
+  N_PASTA: MyString
+  CONDICAO: false

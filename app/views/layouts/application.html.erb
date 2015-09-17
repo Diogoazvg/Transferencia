@@ -14,7 +14,7 @@
             <header>
                 <h1>Transferência de Turma do técnico</h1>
                 <nav>
-                    <a href="">Sair</a>                    
+                    <%= link_to 'Sair', destroy_user_session_path, :method => :delete %>                    
                 </nav>
                 <img src="/assets/logo.png">
             </header>
@@ -27,6 +27,7 @@
                 <% end %>
                 <%= yield %>
             </div>
+            
             <footer class='clear'>
                 <p>Desenvolvido por Diogo Azevedo Gouveia.</p>
             </footer>

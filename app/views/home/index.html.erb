@@ -2,7 +2,7 @@
     <% if user_signed_in? %>
       Logado como <%= current_user.email %>. Não é você?</br>
       <%= link_to 'Sair', destroy_user_session_path, :method => :delete %></br>
-      <%= link_to 'Acessar', '/searches/new' %></br>
+<%= link_to 'Acessar', '/finds' %></br>
       <%= link_to 'Acessar Coordenador', '/searches/new2' %></br>
       </br>
     <% else %>

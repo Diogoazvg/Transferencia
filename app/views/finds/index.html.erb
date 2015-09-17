@@ -1,0 +1,26 @@
+<section><h2>Verificação de Pendências</h2></section>
+
+    <body>
+        <section>
+            <article>
+                <fieldset>
+                    <p>
+                        <%= form_tag "/finds/search" do %>
+                    <p><%= label_tag :Número_de_pasta %></p>
+                          <p><%= text_field_tag :N_PASTA, 'Digite aqui' %>
+                          <p class='help'>
+                            Insira o número de pasta contido na sua carteirinha de aluno.
+                          </p>
+                          <radio-button>
+                            <%= radio_button_tag :CONDICAO,false, :checked => true%>
+                          </radio-button>
+                          <button>
+                            <%= image_submit_tag("botao_proximo.png")%>
+                          </button>
+                        <% end %>
+                    </p>
+                </fieldset>
+            </article>    
+        </section>
+    </body>
+

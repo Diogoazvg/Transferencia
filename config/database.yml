@@ -36,8 +36,23 @@ development:
   #database: db/production.sqlite3
 
 
-development_postgres:
+development_biblioteca:
   adapter: postgresql
   database: Biblioteca
   username: diogo
   password: postgres
+
+
+development_postgres_transferencia:
+  adapter: postgresql
+  database: Transferencia
+  username: diogo
+  password: postgres
+
+
+
+#development_devise:
+  #adapter: postgresql
+  #database: Devise
+  #username: diogo
+  #password: postgres

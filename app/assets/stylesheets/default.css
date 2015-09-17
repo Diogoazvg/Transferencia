@@ -6,17 +6,17 @@
 body {
     background-image: url(/assets/noise.png);
     background-color: #d6c4c4;
-    font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana,
+    font-family: "Comic Sans MS", "Lucida Grande", "Lucida Sans Unicode", Verdana,
     sans-serif;
     line-height: 1.0;
 }
 
 .container {
     background-color: #847b7b;
-    border: 1px solid #000;
+    border: 5px solid #000;
     margin: 0 auto;
     width: 930px;
-    height: 620px;
+    height: 615px;
 }
 /*
  * Corrects block display not defined in IE6/7/8/9 & FF3
@@ -165,7 +165,7 @@ nav {
 section {
     left: -50px;
     position: relative;
-    height: 80px;
+    height: 30px;
     margin: 40px auto;
     width: 650px;
     margin-top: 30px;
@@ -187,15 +187,18 @@ article h2 {
 }
 
 button {
+    background-color: #847b7b;
+    width: 0px;
     position: relative;
-    left: 100px;
-    margin-top: 20px;
-}
+    border: 0px;
+    top: 20px;
+    }
 
 footer {
+    position: absolute;
 	font-size: 12px;
-	text-align: center;
-    margin-top: 350px;
+	left: 550px;
+    top: 590px;
 }
 
 img {
@@ -215,7 +218,7 @@ img {
     position: relative;
     width: 250px;
     margin-top: -55px;
-    left: -40px;
+    left: -70px;
 }
 
 .help::before {
@@ -237,13 +240,14 @@ blockquote {
  h1 {
     float: left;
     width: 770px; 
-    color: #3b3939;
+    color: #7E9F19;
     font-size: 3.0em;
     text-align: left;
     font-style: italic;
-    font-family:sans-serif;
+    font-family:"Helvetica", sans-serif;
     font-variant: small-caps;
     margin-top: auto;
+    text-shadow: 0.04em 0.05em #000;
 }
 
 h1::before {
@@ -278,10 +282,13 @@ h1 a:hover {
 }
 
 h2 {
+    color: black;
     font-family: monospace;
-    font-style: italic;
     font-size: 1.5em;
     margin: 0.83em 0;
+    font-style:italic;
+    font-family:fantasy;
+    font-variant: small-caps;
 }
 
 h3 {
@@ -304,12 +311,23 @@ h6 {
     margin: 2.33em 0;
 }
 
-h7{
+h7 {
 	color: #ed2716;
 	text-decoration: none;
     font-size: 1.0em;
 }
 
+radio-button {
+    visibility: hidden
+}
+
+#notice {
+  color:darkred;
+    left: 150px;
+    top: 10px;
+    position: relative;
+    font-family: fantasy;
+}
 
 /*
  * Addresses styling not present in IE7/8/9, S5, Chrome
@@ -521,7 +539,8 @@ form {
  */
 
 fieldset {
-    border: 0px solid #f81717;
+    height: 350px;
+    border: 1px solid #7E9F19;
     margin: 0 2px;
     padding: 0.35em 0.625em 0.75em;
 }
@@ -553,6 +572,9 @@ textarea {
     margin: 0; /* 2 */
     vertical-align: baseline; /* 3 */
     *vertical-align: middle; /* 3 */
+    border-radius:4px;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
 }
 
 /*
