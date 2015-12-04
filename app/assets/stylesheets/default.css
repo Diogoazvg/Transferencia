@@ -13,10 +13,10 @@ body {
 
 .container {
     background-color: #847b7b;
-    border: 5px solid #000;
+    border: 1px solid #000;
     margin: 0 auto;
     width: 930px;
-    height: 615px;
+    height: 800px;
 }
 /*
  * Corrects block display not defined in IE6/7/8/9 & FF3
@@ -183,7 +183,7 @@ article {
 }
 
 article h2 {
-   width: 600px; 
+   width: 600px;
 }
 
 button {
@@ -239,7 +239,7 @@ blockquote {
 
  h1 {
     float: left;
-    width: 770px; 
+    width: 770px;
     color: #7E9F19;
     font-size: 3.0em;
     text-align: left;
@@ -292,8 +292,14 @@ h2 {
 }
 
 h3 {
-    font-size: 1.17em;
-    margin: 1em 0;
+    position: absolute;
+    top: 100px;
+    color: #000;
+    font-size: 1.0em;
+    font-style: italic;
+    font-family:"Helvetica", sans-serif;
+    font-variant: small-caps;
+    text-shadow: 0.04em 0.05em #000;
 }
 
 h4 {
@@ -318,15 +324,19 @@ h7 {
 }
 
 radio-button {
-    visibility: hidden
+    visibility: hidden;
 }
 
 #notice {
-  color:darkred;
+    width: 500px;
+    border-radius:4px;
+    background-color:#ff0;
+    color:darkred;
     left: 150px;
     top: 10px;
     position: relative;
     font-family: fantasy;
+
 }
 
 /*
@@ -681,3 +691,27 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 10px;
+  background-color: #f0f0f0;
+  h2 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px;
+    margin-bottom: 0px;
+    background-color: #c00;
+    color: #fff;
+  }

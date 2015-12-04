@@ -1,7 +1,6 @@
 <section>
     <fieldset>
         <article>
-
             <p>
                <strong>TURMA ATUAL</strong><br />
             </p>
@@ -12,38 +11,38 @@
             		Turma atual:
             	</strong>
             </p>
-                
-   			<p>
-                <% @search_in_academico.each do |search_in_academico| %>
-  				        <em><%= search_in_academico.nome_pessoa %>&nbsp; &nbsp; &nbsp; &nbsp;</em>
-                  <em><%= search_in_academico.desc_turno %>&nbsp; &nbsp; &nbsp;</em>
-  				        <em><%= search_in_academico.desc_turma %></em>
-                <% end %>
 
+   			    <p>
+                <% @search_in_academico.each do |search_in_academico| %>
+  				        <em><%= search_in_academico.NOME_PESSOA %>&nbsp; &nbsp; &nbsp; &nbsp;</em>
+                  <em><%= search_in_academico.DESC_TURNO %>&nbsp; &nbsp; &nbsp;</em>
+  				        <em><%= search_in_academico.DESC_TURMA %></em>
+                <% end %>
             </p> </br>
 
-
-			<p>
+			      <p>
                <p><strong>TURMA DISPONÍVEL PARA TRANSFERÊNCIA</strong><br /></p>
-
                <strong><th>Nome da turma:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</th>
-               <th>Código do turno:&nbsp; &nbsp; &nbsp;</th>
-               <th>Turno:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</th>	
-               <th>Curso:</th></strong>  
+               <th>Código da Turma:&nbsp; &nbsp; &nbsp;</th>
+               <th>Turno:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</th>
+               <th>Curso:</th></strong>
             </p>
 
-            <p>
+           <p>
             	<% @search_in_academico3.each do |search_in_academico3| %>
-					
-  					<em> <%= search_in_academico3.desc_turma %> &nbsp; &nbsp;</em>
-  					<em>  <%= search_in_academico3.cod_turma %> &nbsp; &nbsp;</em>
-            <em>  <%= search_in_academico3.desc_turno %> &nbsp; &nbsp;</em>
-  					<em>  <%= search_in_academico3.desc_curso %> &nbsp; &nbsp;</em>
+ 					     <em>  <%= search_in_academico3.desc_turma %> &nbsp; &nbsp;</em>
+               <em>  <%= search_in_academico3.cod_turma %> &nbsp; &nbsp;</em>
+               <em>  <%= search_in_academico3.desc_turno %> &nbsp; &nbsp;</em>
+               <em>  <%= search_in_academico3.desc_curso %> &nbsp; &nbsp;</em>
+               
+  				    <% end %>
+  			   </p>
 
-  				<% end %>
-  			</p>
-   <%= link_to 'Apenas um teste', '/searches/teste' %></br>
-        </article>    
-    </fieldset>    
+           <%= form_tag "/finds/create" do %>    
+            <button>
+              <%= image_submit_tag("botao_proximo.png")%>
+            </button>
+           <% end %>
+        </article>
+    </fieldset>
 </section>
-

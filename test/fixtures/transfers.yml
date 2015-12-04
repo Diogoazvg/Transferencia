@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  NOME_PESSOA: MyString
+  DESC_TURNO: MyString
+  PERIODO_ATUAL: MyString
+  COD_TURMA: MyString
+  desc_turno: MyString
+
+two:
+  NOME_PESSOA: MyString
+  DESC_TURNO: MyString
+  PERIODO_ATUAL: MyString
+  COD_TURMA: MyString
+  desc_turno: MyString

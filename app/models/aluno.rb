@@ -1,7 +1,7 @@
 class Aluno < Autentication_sql_server
 	self.table_name = "alunos"
-  	self.primary_key = "cod_aluno"
-  	has_many :matricula, foreign_key: "cod_aluno"
+  	self.primary_key = "COD_ALUNO"
+  	has_many :matricula, foreign_key: "COD_ALUNO"
   	belongs_to :pessoa, foreign_key: "cod_pessoa"
 
 
@@ -13,8 +13,7 @@ class Aluno < Autentication_sql_server
     #}
     
 
-	scope :turno_atual, ->(n_pasta) {Aluno.find_by_sql ["select pessoas.nome_pessoa,turnos.desc_turno, turmas.desc_turma, 
-		matriculas.periodo_atual
+	scope :turno_atual, ->(n_pasta) {Aluno.find_by_sql ["select pessoas.NOME_PESSOA, alunos.N_PASTA, turnos.DESC_TURNO, turmas.DESC_TURMA, alunos.COD_ALUNO, matriculas.PERIODO_ATUAL
 		from pessoas, turmas, alunos, matriculas, turnos 
 		where matriculas.cod_turma_ATUAL = turmas.cod_turma 
 		and pessoas.cod_pessoa = alunos.cod_pessoa 
@@ -25,14 +24,15 @@ class Aluno < Autentication_sql_server
 		and alunos.n_pasta = ?", n_pasta]
 	}
 
-
-	scope :turma_disponivel, ->(periodo_atual, codigo_do_curso, codigo_do_turno) {Aluno.find_by_sql ["select turmas.desc_turma,turnos.desc_turno, 
-		turmas.cod_turma, cursos.desc_curso
-		from turmas, turnos, cursos
-		where  turnos.cod_turno = turmas.cod_turno
-		and cursos.cod_curso = turmas.cod_curso
-		and turmas.ano_let = DATEPART(YEAR, GETDATE())
-		and turmas.periodo = ? and turmas.cod_curso =? and turmas.cod_turno != ?", periodo_atual, codigo_do_curso, codigo_do_turno]
-	}  	
+	scope :turno_atual_salvar, ->(n_pasta) {Aluno.find_by_sql ["select pessoas.NOME_PESSOA, alunos.COD_ALUNO, alunos.N_PASTA, turnos.DESC_TURNO, matriculas.PERIODO_ATUAL
+		from pessoas, turmas, alunos, matriculas, turnos 
+		where matriculas.cod_turma_ATUAL = turmas.cod_turma 
+		and pessoas.cod_pessoa = alunos.cod_pessoa 
+		and alunos.cod_aluno = matriculas.cod_aluno 
+		and matriculas.cod_turno = turnos.cod_turno 
+		and turnos.cod_turno = turmas.cod_turno
+		and turmas.ano_let = DATEPART(YEAR, GETDATE()) 
+		and alunos.n_pasta = ?", n_pasta]
+	}   	
 end
 

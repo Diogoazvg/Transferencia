@@ -4,59 +4,42 @@ class FindsController < ApplicationController
   before_action :current_user
   before_action :user_session
   before_action :set_find, only: [:show, :edit, :update, :destroy]
-
   respond_to :html
 
-  def index
-    #@finds = Find.all
-    #respond_with(@finds)
+  def index 
   end
 
-  def show
-    respond_with(@find)
+  def show  
   end
 
-  def new
-    #@find = Find.new
-    #respond_with(@find)
-  end
-
-  def edit
-  @find = Find.new
-  end
+  #def new 
+  #end
 
   def create
-    @find = Find.new(find_params)
-    @find.save
-    flash[:notice] = 'CONFIRMADO'
+    @gerar_pedido1 = Aluno.turno_atual_salvar(@@pasta).fetch(0).attributes
+    @gerar_pedido2 = Turma.turma_disponivel_salvar(@@search_in_academico_periodo_atual.periodo_atual, @@search_in_academico_codigo_do_curso.cod_curso, @@search_in_academico_codigo_do_turno.cod_turno).fetch(0).attributes
+    @hash_de_pedido = @gerar_pedido1, @gerar_pedido2
+    @hash_unico_salvar = @hash_de_pedido.inject(:merge)
+    @salvar = Find.new(@hash_unico_salvar)
+    @salvar.save
     render :new
-    #respond_with(@find)
   end
 
   def search
-    aluno_existe?
       if aluno_existe?
-        aluno_possui_pendencia_na_biblioteca?            
         if aluno_possui_pendencia_na_biblioteca?
-          flash[:notice] = 'Você não possui pendências na biblioteca, pode prosseguir.'                  
+          flash[:notice] = 'Você não possui pendências na biblioteca, pode prosseguir.'
           turno_atual
           periodo_minimo
+          @@pasta = params[:N_PASTA]
         else
           flash[:notice] = 'Você possui pendências na biblioteca, não pode solicitar uma transferência antes de resolve-las..'
           redirect_to :back
         end
       else
         flash[:notice] = 'Pasta inexistente, provavelmente você não é um aluno matriculado.'
-        redirect_to :back       
-      end 
-  end
-
-  def update
-    @find = Find.new(find_params)
-    @find.save
-
-    #@find.update(find_params)
-    #respond_with(@find)
+        redirect_to :back
+      end
   end
 
   #def destroy
@@ -77,16 +60,16 @@ class FindsController < ApplicationController
 
   def turno_disponivel
     #!@search_in_academico_ano_letivo_atual = Matricula.ano_letivo_atual(params[:N_PASTA]).first
-    @search_in_academico_periodo_atual = Matricula.periodo_atual(params[:N_PASTA]).first
-    @search_in_academico_codigo_do_curso = Matricula.codigo_do_curso(params[:N_PASTA]).first
-    @search_in_academico_codigo_do_turno = Matricula.codigo_do_turno(params[:N_PASTA]).first
-    @search_in_academico3 = Aluno.turma_disponivel(@search_in_academico_periodo_atual.periodo_atual, 
-    @search_in_academico_codigo_do_curso.cod_curso, @search_in_academico_codigo_do_turno.cod_turno)
+    @@search_in_academico_periodo_atual = Matricula.periodo_atual(params[:N_PASTA]).first
+    @@search_in_academico_codigo_do_curso = Matricula.codigo_do_curso(params[:N_PASTA]).first
+    @@search_in_academico_codigo_do_turno = Matricula.codigo_do_turno(params[:N_PASTA]).first
+    @search_in_academico3 = Turma.turma_disponivel(@@search_in_academico_periodo_atual.periodo_atual,
+        @@search_in_academico_codigo_do_curso.cod_curso, @@search_in_academico_codigo_do_turno.cod_turno)
   end
 
   def periodo_minimo
     @search_in_academico.each do |teste|
-      if teste.periodo_atual < 2
+      if teste.PERIODO_ATUAL < 2
         flash[:notice] = "Você precisa estar pelo menos no 2º módulo para solicitar uma transferência"
         redirect_to :back
       else
@@ -95,13 +78,4 @@ class FindsController < ApplicationController
       end
     end
   end
-
-  private
-    def set_find
-      @find = Find.find(params[:id])
-    end
-
-    def find_params
-        params.require(:find).permit(:TURNO, :N_PASTA)
-    end
 end
