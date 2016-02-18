@@ -5,14 +5,14 @@
             <article>
                 <fieldset>
                     <p>
-                        <%= form_tag "/finds/search" do %>
-                          <p><%= label_tag :Número_de_pasta %></p>
-                          <p><%= text_field_tag :N_PASTA, placeholder = 'Digite aqui' %>
+                        <%= form_tag(finds_search_path, :method => :post) do %>
+                          <p><%= label_tag :MATRICULA %></p>
+                          <p><%= text_field_tag 'search_matricula', nil, placeholder: 'Insira aqui...' %>
                           <p class='help'>
-                            Insira o número de pasta contido na sua carteirinha de aluno.
+                            Insira o número de matrícula contido na sua carteirinha de aluno.
                           </p>
                           <radio-button>
-                            <%= radio_button_tag :CONDICAO,false, :checked => true%>
+                            <%= radio_button_tag 'search_condicao',false, :checked => true%>
                           </radio-button>
                           <button>
                             <%= image_submit_tag("botao_proximo.png")%>
@@ -20,7 +20,6 @@
                         <% end %>
                     </p>
                 </fieldset>
-            </article>    
+            </article>
         </section>
     </body>
-

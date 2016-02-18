@@ -9,36 +9,35 @@ class Matricula < Autentication_sql_server
   has_many :transferencia, foreign_key: "cod_matricula"
 
 
-  	scope :ano_letivo_atual, -> (n_pasta){ Matricula.find_by_sql ["select matriculas.ano_let_atual 
+  	scope :ano_letivo_atual, ->(matricula){ Matricula.find_by_sql ["select matriculas.ano_let_atual 
            from matriculas, alunos
            where alunos.cod_aluno = matriculas.cod_aluno
-            and  alunos.n_pasta = ?", n_pasta] 		
+            and  matriculas.matricula = ?", matricula] 		
 	}
   	
-  	scope :periodo_atual, ->(n_pasta) { Matricula.find_by_sql ["select matriculas.periodo_atual 
-           from matriculas, alunos
-           where alunos.cod_aluno = matriculas.cod_aluno
-           and matriculas.periodo_atual >= 2
-           and matriculas.ano_let_atual = DATEPART(YEAR, GETDATE())
-            and  alunos.n_pasta = ?", n_pasta] 		
+  	scope :periodo_atual, ->(matricula) { Matricula.find_by_sql ["select matriculas.periodo_atual 
+           from matriculas
+           where matriculas.periodo_atual >= 2
+           and matriculas.ano_let_atual = '2015'
+           and matriculas.matricula = ?", matricula] 		
 	}
 
-	scope :codigo_do_curso, ->(n_pasta) { Matricula.find_by_sql ["select matriculas.cod_curso 
+	scope :codigo_do_curso, ->(matricula) { Matricula.find_by_sql ["select matriculas.cod_curso 
            from matriculas, alunos
            where alunos.cod_aluno = matriculas.cod_aluno
-           and  alunos.n_pasta = ?", n_pasta] 		
+           and  matriculas.matricula = ?", matricula] 		
 	}
 
-	scope :codigo_do_turno, ->(n_pasta) { Matricula.find_by_sql ["select matriculas.cod_turno 
+	scope :codigo_do_turno, ->(matricula) { Matricula.find_by_sql ["select matriculas.cod_turno 
            from matriculas, alunos
            where alunos.cod_aluno = matriculas.cod_aluno
-           and  alunos.n_pasta = ?", n_pasta] 		
+           and  matriculas.matricula = ?", matricula] 		
 	}
 
-  scope :codigo_do_turma_atual, ->(n_pasta) { Matricula.find_by_sql ["select matriculas.cod_turma_atual 
+  scope :codigo_do_turma_atual, ->(matricula) { Matricula.find_by_sql ["select matriculas.cod_turma_atual 
            from matriculas, alunos
            where alunos.cod_aluno = matriculas.cod_aluno
-           and  alunos.n_pasta = ?", n_pasta]     
+           and  matriculas.matricula = ?", matricula]     
   }
 
   scope :transferencia, ->(cod_turno, cod_turma, cod_aluno){Matricula.find_by_sql ["UPDATE MATRICULAS
@@ -48,7 +47,14 @@ class Matricula < Autentication_sql_server
           and MATRICULAS.COD_CURSO = CURSOS.COD_CURSO
           and PESSOAS.COD_PESSOA = ALUNOS.COD_PESSOA
           and ALUNOS.COD_ALUNO = MATRICULAS.COD_ALUNO
-          and MATRICULAS.ANO_LET_ATUAL = DATEPART(YEAR, GETDATE())
+          and MATRICULAS.ANO_LET_ATUAL = '2015'
           and  ALUNOS.COD_ALUNO = ?",cod_turno, cod_turma, cod_aluno]
   }        
 end
+
+
+
+#and matriculas.ano_let_atual = DATEPART(YEAR, GETDATE())
+
+
+

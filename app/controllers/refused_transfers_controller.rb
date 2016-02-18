@@ -9,7 +9,11 @@ class RefusedTransfersController < ApplicationController
 
   def index
     @refused_transfers = RefusedTransfer.where(aceita: false)
-    respond_with(@refused_transfers)
+    #respond_with(@refused_transfers)
+    respond_to do |format|
+      format.html
+      format.json {render json: @refused_transfers}
+    end
   end
 
   def show

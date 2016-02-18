@@ -10,7 +10,7 @@ class Turma < Autentication_sql_server
 		from turmas, turnos, cursos
 		where  turnos.cod_turno = turmas.cod_turno
 		and cursos.cod_curso = turmas.cod_curso
-		and turmas.ano_let = DATEPART(YEAR, GETDATE())
+		and turmas.ano_let = '2015'
 		and turmas.periodo = ? and turmas.cod_curso =? and turmas.cod_turno != ?", periodo_atual, codigo_do_curso, codigo_do_turno]
 	}
 
@@ -19,7 +19,7 @@ class Turma < Autentication_sql_server
 		from turmas, turnos, cursos
 		where  turnos.cod_turno = turmas.cod_turno
 		and cursos.cod_curso = turmas.cod_curso
-		and turmas.ano_let = DATEPART(YEAR, GETDATE())
+		and turmas.ano_let = '2015'
 		and turmas.periodo = ? and turmas.cod_curso =? and turmas.cod_turno != ?", periodo_atual, codigo_do_curso, codigo_do_turno]
 	}
 end

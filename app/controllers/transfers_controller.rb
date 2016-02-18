@@ -7,8 +7,14 @@ class TransfersController < ApplicationController
   respond_to :html
 
   def index
-    @transfers = Transfer.where(aceita: nil)
-    respond_with(@transfers)
+    #if @tra: params[:cond] == "true"
+      @transfers = Transfer.where(aceita: nil)
+      respond_to do |format|
+        format.html
+        format.xml {render xml: @transfers}
+        format.json {render json: @transfers}
+      end
+    #end
   end
 
   def show
@@ -53,6 +59,6 @@ class TransfersController < ApplicationController
     end
 
     def transfer_params
-      params.require(:transfer).permit(:COD_TURNO, :COD_TURMA, :COD_ALUNO, :justificativa, :aceita)
+      params.require(:transfer).permit(:COD_TURNO, :COD_TURMA, :COD_ALUNO, :justificativa, :aceita, :cond)
     end
 end
